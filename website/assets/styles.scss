@@ -1,7 +1,8 @@
 $color-black: #101010;
+$color-red: #FF2D2D;
 $color-font: #ffffff;
-$main-font: 'Roboto', sans-serif;
 
+$main-font: 'Roboto', sans-serif;
 $font-heavy: 700;
 
 
@@ -20,6 +21,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: $main-font;
+  color: $color-font;
   background-color: $color-black;
 }
 
@@ -32,7 +34,7 @@ body {
   @include flex-column;
 
   .menu-page {   
-    height: 25vh;
+    height: calc(100vw/3);
     width: 100vw;
     background: $color-black;
     border: 2px bold black;
@@ -73,11 +75,16 @@ body {
 }
 
 /* topspeedcenter */
+/* nav */
 #topnav {
+  width: 100vw;
+  box-sizing: border-box;
+  position: fixed;
   @include flex-row();
   justify-content: space-between;
   align-items: center;
   padding: .75rem;
+  z-index: 900;
 
   .toggle > a > i {
     font-size: 1.5rem;
@@ -95,6 +102,7 @@ body {
 }
 
 #side-menu {
+  box-sizing: border-box;
   position: absolute;
   top: 0;
   padding: .5rem;
@@ -103,6 +111,7 @@ body {
   width: 70vw;
   overflow: hidden;
   background-color: $color-black;
+  z-index: 1000;
   @include flex-column();
 
   .side-top {
@@ -135,7 +144,7 @@ body {
 
   .side-lang {
     position: absolute;
-    bottom: 1.5rem;
+    bottom: .5rem;
 
     a {
       font-size: 1rem;
@@ -143,6 +152,61 @@ body {
     }
   }
 
+}
+
+/* home */
+#main-home {
+  position: relative;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  @include flex-column();
+  justify-content: space-between;
+
+  .main-bg {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../images/home_bg.jpeg);
+    background-size: cover;
+    opacity: .6;
+    z-index: -5;
+  }
+  
+  .header-text {
+    width: 100vw;
+    padding: 5.5rem 1rem 0 1rem;
+    box-sizing: border-box;
+
+    h1 {
+      font-size: 3rem;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin: 1rem 0 0 0;
+    }
+  }
+
+  .main-bottom {
+    width: 100vw;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    @include flex-column();
+    align-items: center;
+    gap: 1.5rem;
+
+    button {
+      font-size: 1rem;
+      text-transform: uppercase;
+      color: $color-font;
+      border: none;
+      padding: 1rem;
+      background-color: $color-red;
+    }
+  }
 }
 
 /* Media Query XS Landscape*/
@@ -155,7 +219,7 @@ body {
 
     .menu-page {   
       height: 100vh;
-      width: 25vw;
+      width: calc(100vw/3);
     }
   }
 }

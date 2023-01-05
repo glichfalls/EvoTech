@@ -3,7 +3,7 @@
     <span class="toggle" onclick="sideMenuOpen()">
       <a href="#"><i class="fa-sharp fa-solid fa-bars"></i></a>
     </span>
-    <img src="images/logo.png" alt="TopSpeedCenter Logo">
+    <img src="../images/logo.png" alt="TopSpeedCenter Logo">
   </nav>
   <div id="side-menu">
     <div class="side-top">

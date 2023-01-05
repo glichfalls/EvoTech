@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  color: #ffffff;
   background-color: #101010;
 }
 
@@ -15,7 +16,7 @@ body {
   flex-direction: column;
 }
 .index-menu .menu-page {
-  height: 25vh;
+  height: 33.3333333333vw;
   width: 100vw;
   background: #101010;
   border: 2px bold black;
@@ -51,12 +52,17 @@ body {
 }
 
 /* topspeedcenter */
+/* nav */
 #topnav {
+  width: 100vw;
+  box-sizing: border-box;
+  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 0.75rem;
+  z-index: 900;
 }
 #topnav .toggle > a > i {
   font-size: 1.5rem;
@@ -71,6 +77,7 @@ body {
 }
 
 #side-menu {
+  box-sizing: border-box;
   position: absolute;
   top: 0;
   padding: 0.5rem;
@@ -79,6 +86,7 @@ body {
   width: 70vw;
   overflow: hidden;
   background-color: #101010;
+  z-index: 1000;
   display: flex;
   flex-direction: column;
 }
@@ -109,11 +117,62 @@ body {
 }
 #side-menu .side-lang {
   position: absolute;
-  bottom: 1.5rem;
+  bottom: 0.5rem;
 }
 #side-menu .side-lang a {
   font-size: 1rem;
   text-decoration: none;
+}
+
+/* home */
+#main-home {
+  position: relative;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#main-home .main-bg {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../images/home_bg.jpeg);
+  background-size: cover;
+  opacity: 0.6;
+  z-index: -5;
+}
+#main-home .header-text {
+  width: 100vw;
+  padding: 5.5rem 1rem 0 1rem;
+  box-sizing: border-box;
+}
+#main-home .header-text h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+#main-home .header-text p {
+  font-size: 1.1rem;
+  margin: 1rem 0 0 0;
+}
+#main-home .main-bottom {
+  width: 100vw;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+#main-home .main-bottom button {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  padding: 1rem;
+  background-color: #FF2D2D;
 }
 
 /* Media Query XS Landscape*/
@@ -126,6 +185,6 @@ body {
   }
   .index-menu .menu-page {
     height: 100vh;
-    width: 25vw;
+    width: 33.3333333333vw;
   }
 }/*# sourceMappingURL=styles.css.map */
