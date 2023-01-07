@@ -16,7 +16,7 @@
       </span>
     </div>
     <div class="side-menu-links">
-      <a href="#" class="active">home</a>
+      <a href="index.php" class="active">home</a>
       <a href="kontakt.php">kontakt</a>
       <a href="angebot.php">angebot</a>
       <a href="buchen.php">buchen</a>

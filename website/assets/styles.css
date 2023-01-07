@@ -7,6 +7,10 @@ body {
   background-color: #101010;
 }
 
+h1 {
+  text-transform: uppercase;
+}
+
 /* Media Query XS Portrait*/
 /* index page */
 .index-menu {
@@ -150,7 +154,6 @@ body {
 }
 #main-home .header-text h1 {
   font-size: 3rem;
-  text-transform: uppercase;
   margin: 0;
 }
 #main-home .header-text p {
@@ -167,12 +170,91 @@ body {
   gap: 1.5rem;
 }
 #main-home .main-bottom button {
-  font-size: 1rem;
   text-transform: uppercase;
   color: #ffffff;
   border: none;
-  padding: 1rem;
   background-color: #FF2D2D;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+/* kontakt */
+#main-contact {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 4rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+#main-contact h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+#main-contact form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+#main-contact form input, #main-contact form textarea {
+  color: #ffffff;
+  background-color: #2D2D2D;
+  padding: 0.5rem;
+  border: 1px white solid;
+}
+#main-contact form textarea {
+  resize: vertical;
+}
+#main-contact form input:focus, #main-contact form textarea:focus {
+  color: #ffffff;
+}
+#main-contact form button {
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  background-color: #FF2D2D;
+  width: 30vw;
+  font-size: 0.75rem;
+  padding: 0.5rem;
+}
+#main-contact form .contact-info {
+  display: flex;
+  flex-direction: column;
+}
+#main-contact form .contact-info .contact-icons {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  gap: 0.5rem;
+}
+
+/* angebot */
+#main-angebot {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 4rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+#main-angebot .angebot {
+  margin: 1rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+#main-angebot .angebot img {
+  height: 20vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#main-angebot .angebot p {
+  margin: 0.5rem;
+}
+#main-angebot h1 {
+  font-size: 3rem;
+  margin: 0;
 }
 
 /* Media Query XS Landscape*/
