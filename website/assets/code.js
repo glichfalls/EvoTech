@@ -24,9 +24,9 @@ if (window.matchMedia("(orientation: portrait)").matches) {
       $('#menu-simracing').css({height: '25vh'});
       $('#menu-events').css({height: '25vh'});
       $('#menu-rcc').css({height: '25vh'});
-      $('#menu-simracing').css('opacity', '0.4')
-      $('#menu-events').css('opacity', '0.4')
-      $('#menu-rcc').css('opacity', '0.4')
+      $('#menu-simracing').css('opacity', '0.15')
+      $('#menu-events').css('opacity', '0.15')
+      $('#menu-rcc').css('opacity', '0.15')
     });
   }); 
   
@@ -37,9 +37,9 @@ if (window.matchMedia("(orientation: portrait)").matches) {
       $('#menu-simulatoren').css({height: '25vh'});
       $('#menu-events').css({height: '25vh'});
       $('#menu-rcc').css({height: '25vh'});
-      $('#menu-simulatoren').css('opacity', '0.4')
-      $('#menu-events').css('opacity', '0.4')
-      $('#menu-rcc').css('opacity', '0.4')
+      $('#menu-simulatoren').css('opacity', '0.15')
+      $('#menu-events').css('opacity', '0.15')
+      $('#menu-rcc').css('opacity', '0.15')
     });
   });
   
@@ -50,9 +50,9 @@ if (window.matchMedia("(orientation: portrait)").matches) {
       $('#menu-simulatoren').css({height: '25vh'});
       $('#menu-simracing').css({height: '25vh'});
       $('#menu-rcc').css({height: '25vh'});
-      $('#menu-simulatoren').css('opacity', '0.4')
-      $('#menu-simracing').css('opacity', '0.4')
-      $('#menu-rcc').css('opacity', '0.4')
+      $('#menu-simulatoren').css('opacity', '0.15')
+      $('#menu-simracing').css('opacity', '0.15')
+      $('#menu-rcc').css('opacity', '0.15')
     });
   });
   
@@ -63,9 +63,9 @@ if (window.matchMedia("(orientation: portrait)").matches) {
       $('#menu-simulatoren').css({height: '25vh'});
       $('#menu-simracing').css({height: '25vh'});
       $('#menu-events').css({height: '25vh'});
-      $('#menu-simulatoren').css('opacity', '0.4')
-      $('#menu-simracing').css('opacity', '0.4')
-      $('#menu-events').css('opacity', '0.4')
+      $('#menu-simulatoren').css('opacity', '0.15')
+      $('#menu-simracing').css('opacity', '0.15')
+      $('#menu-events').css('opacity', '0.15')
     });
   }); */
 } else {
@@ -86,9 +86,9 @@ if (window.matchMedia("(orientation: portrait)").matches) {
       $('#menu-simracing').css({width: '25vw'});
       $('#menu-events').css({width: '25vw'});
       $('#menu-rcc').css({width: '25vw'});
-      $('#menu-simracing').css('opacity', '0.4')
-      $('#menu-events').css('opacity', '0.4')
-      $('#menu-rcc').css('opacity', '0.4')
+      $('#menu-simracing').css('opacity', '0.15')
+      $('#menu-events').css('opacity', '0.15')
+      $('#menu-rcc').css('opacity', '0.15')
     });
   });
   
@@ -99,9 +99,9 @@ if (window.matchMedia("(orientation: portrait)").matches) {
       $('#menu-simulatoren').css({width: '25vw'});
       $('#menu-events').css({width: '25vw'});
       $('#menu-rcc').css({width: '25vw'});
-      $('#menu-simulatoren').css('opacity', '0.4')
-      $('#menu-events').css('opacity', '0.4')
-      $('#menu-rcc').css('opacity', '0.4')
+      $('#menu-simulatoren').css('opacity', '0.15')
+      $('#menu-events').css('opacity', '0.15')
+      $('#menu-rcc').css('opacity', '0.15')
     });
   });
   
@@ -112,9 +112,9 @@ if (window.matchMedia("(orientation: portrait)").matches) {
       $('#menu-simulatoren').css({width: '25vw'});
       $('#menu-simracing').css({width: '25vw'});
       $('#menu-rcc').css({width: '25vw'});
-      $('#menu-simulatoren').css('opacity', '0.4')
-      $('#menu-simracing').css('opacity', '0.4')
-      $('#menu-rcc').css('opacity', '0.4')
+      $('#menu-simulatoren').css('opacity', '0.15')
+      $('#menu-simracing').css('opacity', '0.15')
+      $('#menu-rcc').css('opacity', '0.15')
     });
   });
   
@@ -125,9 +125,9 @@ if (window.matchMedia("(orientation: portrait)").matches) {
       $('#menu-simulatoren').css({width: '25vw'});
       $('#menu-simracing').css({width: '25vw'});
       $('#menu-events').css({width: '25vw'});
-      $('#menu-simulatoren').css('opacity', '0.4')
-      $('#menu-simracing').css('opacity', '0.4')
-      $('#menu-events').css('opacity', '0.4')
+      $('#menu-simulatoren').css('opacity', '0.15')
+      $('#menu-simracing').css('opacity', '0.15')
+      $('#menu-events').css('opacity', '0.15')
     });
   }); */
 }

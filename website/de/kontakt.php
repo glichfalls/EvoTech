@@ -7,7 +7,7 @@ require '../assets/PHPMailer/PHPMailer.php';
 require '../assets/PHPMailer/SMTP.php';
 require '../assets/PHPMailer/Exception.php';
 
-if(isset($_POST["submit"])){
+if(isset($_POST["submit"])) {
   $mail = new PHPMailer();
   $mail->isSMTP();
   $mail->Host = "smtp.gmail.com";
@@ -21,9 +21,12 @@ if(isset($_POST["submit"])){
   $mail->Subject = "Webanfrage";
   $mail->Body = 
   "Vorname: " . $_POST["vorname"] .
-  "\r\n Nachname: " . $_POST["nachname"] .
-  "\r\n Email: " . $_POST["email"] .
-  "\r\n Nachricht: \r\n" . $_POST["message"];
+  "\r\n \r\n Nachname: " . $_POST["nachname"] .
+  "\r\n \r\n Email: " . $_POST["email"] .
+  "\r\n \r\n Nachricht: \r\n \r\n" . $_POST["message"];
+
+  if($mail->send()) {
+  }
 }
 
 ?>
@@ -47,27 +50,30 @@ if(isset($_POST["submit"])){
   ?>
 
   <main id="main-contact">
-    <h1>kontakt</h1>
-    <p>Gerne stehen wir Ihnen für anfällige Fragen zur Verfügung.</p>
-    <form method="post" action="kontakt.php">
-      <input type="text" id="vorname" name="vorname" value="" placeholder="Vorname">
-      <input type="text" id="nachname" name="nachname" value="" placeholder="Nachname">
-      <input type="email" id="email" name="email" value="" placeholder="Email">
-      <textarea id="message" name="message" value="" placeholder="Ihre Mitteilung" rows="7"></textarea>
-      <button type="submit" name="submit">senden</button>
-    </form>
+    <div class="contact-form">
+      <h1>kontakt</h1>
+      <p>Gerne stehen wir Ihnen für anfällige Fragen zur Verfügung.</p>
+      <form method="post" action="kontakt.php">
+        <input type="text" id="vorname" name="vorname" value="" placeholder="Vorname">
+        <input type="text" id="nachname" name="nachname" value="" placeholder="Nachname">
+        <input type="email" id="email" name="email" value="" placeholder="Email">
+        <textarea id="message" name="message" value="" placeholder="Ihre Mitteilung" rows="7"></textarea>
+        <button type="submit" name="submit">senden</button>
+      </form>
+    </div>
     <div class="contact-info">
       <p>Kontaktinformationen:<br><br>
       TOPSPEEDCENTER SOLOTHURN<br>
-      STRASSENNAME 99<br>
+      Glutz-Blotzheim-Strasse 3<br>
       4500 Solothurn<br>
       Schweiz<br><br>
       +41 12 345 67 89<br>
-      info@topspeedcenter.ch</p>
+      <a href="mailto:info@topspeedcenter.ch">info@topspeedcenter.ch</a></p>
       <div class="contact-icons">
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-square-facebook"></i>
+        <a href="https://tinyurl.com/2cpzted3"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://tinyurl.com/3xznjs3k"><i class="fa-brands fa-square-facebook"></i></a>
       </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d307.6817732341548!2d7.528045993930082!3d47.20243094052432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791d800a3a1fc97%3A0xe8eae74959be4f27!2sGlutz-Blotzheim-Strasse%203%2C%204500%20Solothurn!5e0!3m2!1sen!2sch!4v1673278400416!5m2!1sen!2sch" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </main>
 
