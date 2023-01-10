@@ -94,7 +94,8 @@ button {
   display: none;
   justify-content: flex-end;
   align-items: center;
-  gap: 3rem;
+  gap: 5rem;
+  letter-spacing: 0.5rem;
   padding: 1.5rem;
   z-index: 900;
   /* .active {
@@ -105,6 +106,10 @@ button {
   color: white;
   font-size: 1.75rem;
   text-transform: uppercase;
+}
+#desktop-nav a:hover {
+  color: #FF2D2D;
+  transition: 0.3s;
 }
 #desktop-nav img {
   width: 14.2857142857vw;
@@ -176,8 +181,11 @@ button {
   width: 100vw;
   background-image: url(../images/home_bg.jpeg);
   background-size: cover;
-  opacity: 0.6;
+  opacity: 0.4;
   z-index: -5;
+}
+#main-home .home-sim {
+  background-image: url(../images/sim_bg.jpg);
 }
 #main-home .header-text {
   width: 100vw;
@@ -352,6 +360,11 @@ button {
   #main-home .header-text h1 {
     font-size: 6rem;
     line-height: 5rem;
+  }
+  #main-home .header-text h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 0;
   }
   #main-home .header-text p {
     font-size: 2rem;
