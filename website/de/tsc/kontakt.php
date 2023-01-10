@@ -54,7 +54,7 @@ if(isset($_POST["submit"])) {
     <div class="contact-form">
       <h1>kontakt</h1>
       <p>Gerne stehen wir Ihnen für anfällige Fragen zur Verfügung.</p>
-      <form name="contact" method="post" action="kontakt.php" onsubmit="return validateForm()">
+      <form name="contact" method="post" action="kontakt.php" >
         <input type="text" id="vorname" name="vorname" value="" placeholder="Vorname">
         <input type="text" id="nachname" name="nachname" value="" placeholder="Nachname">
         <input type="email" id="email" name="email" value="" placeholder="Email">

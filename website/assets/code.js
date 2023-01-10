@@ -6,7 +6,7 @@ function sideMenuClose(){
   $('#side-menu').animate({left: '-75vw'}, 400);
 }
 
-function validateForm() {
+/* function validateForm() {
   let vorname = document.forms["contact"]["vorname"].value;
   let nachname = document.forms["contact"]["nachname"].value;
   let email = document.forms["contact"]["email"].value;
@@ -15,7 +15,7 @@ function validateForm() {
     alert("Bitte füllen Sie alle Felder aus.");
     return false;
   }
-}
+} */
 
 /* $(document).ready(function() {
   $('.desktop-nav a').click(function(e) {

@@ -19,7 +19,7 @@
   <main id="main-home">
     <div class="main-bg"></div>
       <div class="header-text">
-        <h1>topspeed<br>center<br>solothurn</h1>
+        <h1>topspeed<br>sim racing<br>solothurn</h1>
         <p>
           Erleben Sie unvergessliches
           Racefeeling und spüren
