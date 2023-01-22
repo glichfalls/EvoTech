@@ -1,6 +1,7 @@
 {
-	"folders": [],
-	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "Logo_Banner_Animation"
-	}
+  "folders": [
+    {
+      "path": "."
+    }
+  ]
 }
