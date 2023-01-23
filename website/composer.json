@@ -1,0 +1,11 @@
+{
+  "autoload": {
+    "psr-4": {
+      "EvoTech\\": "src"
+    }
+  },
+  "require": {
+    "symfony/translation": "v6.0.14",
+    "symfony/yaml": "v6.0.17"
+  }
+}
