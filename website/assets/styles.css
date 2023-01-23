@@ -314,6 +314,28 @@ button {
   margin: 0;
 }
 
+/* shop */
+#main-shop {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 10vh 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 7.5vw;
+  padding-right: 7.5vw;
+}
+#main-shop h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+#main-shop .sim-items .simulator {
+  width: 85vw;
+}
+#main-shop .sim-items .simulator img {
+  height: 20%;
+}
+
 /* impressum */
 #main-impressum {
   height: 100vh;

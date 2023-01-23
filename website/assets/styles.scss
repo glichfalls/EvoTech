@@ -356,6 +356,29 @@ button {
   }
 }
 
+/* shop */
+#main-shop {
+  @include main-div();
+  padding-left: 7.5vw;
+  padding-right: 7.5vw;
+
+  h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  .sim-items {
+    
+    .simulator {
+      width: 85vw;
+
+      img {
+        height: 20%;
+      }
+    }
+  }
+}
+
 /* impressum */
 #main-impressum {
   @include main-div();

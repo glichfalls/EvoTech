@@ -17,33 +17,35 @@
   ?>
 
   <main id="main-shop">
-    <span>
-      <h1>simulatoren</h1>
-      <div class="sim-items">
-        <h2>race</h2>
-        <div class="simulator">
-          <img src="../../images/angebot_3.jpg" alt="simulator race version">
-          <h3>info 1</h3>
-          <p>info 1</p>
-          <h3>info 2</h3>
-          <p>info 2</p>
-          <h3>info 3</h3>
-          <p>info 3</p>
-          <button></button>
-        </div>
-        <h2>pro</h2>
-        <div class="simulator">
-          <img src="../../images/angebot_3.jpg" alt="simulator pro version">
-          <h3>info 1</h3>
-          <p>info 1</p>
-          <h3>info 2</h3>
-          <p>info 2</p>
-          <h3>info 3</h3>
-          <p>info 3</p>
-          <button></button>
-        </div>
+    <h1>simulatoren</h1>
+    <div class="sim-items">
+      <h2>race</h2>
+      <div class="simulator">
+        <img src="../../images/angebot_3.jpg" alt="simulator race version">
+        <h3>info 1</h3>
+        <p>info 1</p>
+        <h3>info 2</h3>
+        <p>info 2</p>
+        <h3>info 3</h3>
+        <p>info 3</p>
+        <button onclick="location.href='sim-race.php'" type="button">
+          jetzt zusammenstellen
+        </button>
       </div>
-    </span>
+      <h2>pro</h2>
+      <div class="simulator">
+        <img src="../../images/angebot_3.jpg" alt="simulator pro version">
+        <h3>info 1</h3>
+        <p>info 1</p>
+        <h3>info 2</h3>
+        <p>info 2</p>
+        <h3>info 3</h3>
+        <p>info 3</p>
+        <button onclick="location.href='sim-pro.php'" type="button">
+          jetzt zusammenstellen
+        </button>
+      </div>
+      </div>
   </main>
 
 </body>
