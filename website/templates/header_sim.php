@@ -6,11 +6,11 @@
     <img src="../../images/logo.png" alt="TopSpeedCenter Logo">
   </nav>
   <nav id="desktop-nav">
-    <a href="simulatoren.php">home</a>
+    <a href="/<?= $translation->locale() ?>/simulatoren.php">home</a>
     <a href="kontakt_sim.php">kontakt</a>
     <a href="shop.php">simulatoren</a>
     <a href="impressum_sim.php">impressum</a>
-    <a href="/en/#">EN</a>
+    <a href="/?lang=<?= $translation->oppositeLocale() ?>">EN</a>
     <a href="../index.php"><img src="../../images/logo.png" alt=""></a>
   </nav>
   <div id="side-menu">
