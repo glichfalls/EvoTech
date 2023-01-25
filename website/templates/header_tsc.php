@@ -6,11 +6,11 @@
     <img src="../../images/logo.png" alt="TopSpeedCenter Logo">
   </nav>
   <nav id="desktop-nav">
-    <a href="topspeedcenter.php">home</a>
-    <a href="kontakt.php">kontakt</a>
-    <a href="angebot.php">angebot</a>
-    <a href="buchen.php">buchen</a>
-    <a href="impressum.php">impressum</a>
+    <a href="/<?= $translation->locale() ?>/topspeedcenter.php">home</a>
+    <a href="kontakt.php"><?= $translation->t('pages.tsc.header.kontakt') ?></a>
+    <a href="angebot.php"><?= $translation->t('pages.tsc.header.angebot') ?></a>
+    <a href="buchen.php"><?= $translation->t('pages.tsc.header.buchen') ?></a>
+    <a href="impressum.php"><?= $translation->t('pages.tsc.header.impressum') ?></a>
     <a href="/en/#">EN</a>
     <a href="../index.php"><img src="../../images/logo.png" alt=""></a>
   </nav>
@@ -26,10 +26,10 @@
     </div>
     <div class="side-menu-links">
       <a href="index.php" class="active">home</a>
-      <a href="kontakt.php">kontakt</a>
-      <a href="angebot.php">angebot</a>
-      <a href="buchen.php">buchen</a>
-      <a href="impressum.php">impressum</a>
+      <a href="kontakt.php"><?= $translation->t('pages.tsc.header.kontakt') ?></a>
+      <a href="angebot.php"><?= $translation->t('pages.tsc.header.angebot') ?></a>
+      <a href="buchen.php"><?= $translation->t('pages.tsc.header.buchen') ?></a>
+      <a href="impressum.php"><?= $translation->t('pages.tsc.header.impressum') ?></a>
     </div>
     <div class="side-lang">
       <a href="/de/#">DE</a>

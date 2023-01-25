@@ -14,15 +14,64 @@ if ($locale === 'de' || $locale === 'en') {
 
 $formData = [
     'Einsatz' => [
-        ['label' => 'A', 'price' => 10],
-        ['label' => 'B', 'price' => 50],
+        ['label' => 'Privat'],
+        ['label' => 'Kommerziell'],
     ],
     'Headset' => [
-        ['label' => 'C', 'price' => 60],
-        ['label' => 'D', 'price' => 70],
+        ['label' => 'Nein', 'price' => 0],
+        ['label' => 'Ja', 'price' => 999],
     ],
     'Lautsprecher' => [
-        ['label' => 'E', 'price' => 90],
-        ['label' => 'F', 'price' => 0],
+        ['label' => 'Nein', 'price' => 0],
+        ['label' => 'Ja', 'price' => 999],
+    ],
+    '4-Punkt-Gurte' => [
+        ['label' => 'Nein', 'price' => 0],
+        ['label' => 'Ja', 'price' => 999],
+    ],
+    'Kabeleingang' => [
+        ['label' => 'Vorne'],
+        ['label' => 'Hinten'],
+    ],
+    'Simulatorfarbe' => [
+        ['rot'],
+        ['blau'],
+        ['grün'],
+    ],
+    'Spezielle Farbangabe' => [
+    ],
+    'Sitzfarbe' => [
+        ['rot'],
+        ['blau'],
+        ['grün'],
+    ],
+    'Polsterfarbe' => [
+        ['rot'],
+        ['blau'],
+        ['grün'],
+    ],
+    'Fadenfarbe' => [
+        ['rot'],
+        ['blau'],
+        ['grün'],
+    ],
+    'Startnummer' => [
+    ],
+    'Farbe der Startnummer' => [
+        ['rot'],
+        ['blau'],
+        ['grün'],
+    ],
+    'Nummer-Design' => [
+        ['rot'],
+        ['blau'],
+        ['grün'],
+    ],
+    'Hintergrund Startnummer' => [
+        ['rot'],
+        ['blau'],
+        ['grün'],
+    ],
+    'Fahrername' => [
     ],
 ];

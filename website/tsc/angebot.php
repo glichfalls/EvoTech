@@ -18,31 +18,28 @@
 
   <main id="main-angebot">
     <span>
-      <h1>angebot</h1>
+      <h1><?= $translation->t('pages.tsc.angebot.title') ?></h1>
       <div class="angebot-items">
         <div class="angebot">
           <img src="../images/angebot_1.jpg" alt="">
           <p>
-            <li>sämtliche F1-Rennstrecken<br></li>
-            <li>sämtliche GT-Rennstrecken<br></li>
-            <li>zahlreiche weitere Rennstrecken weltweit</li>
+            <li><?= $translation->t('pages.tsc.angebot.f1-rennstrecken') ?><br></li>
+            <li><?= $translation->t('pages.tsc.angebot.gt-rennstrecken') ?><br></li>
+            <li><?= $translation->t('pages.tsc.angebot.weitereRS') ?></li>
           </p>
         </div>
         <div class="angebot">
           <img src="../images/angebot_2.jpg" alt="">
           <p>
-          <li>sämtliche F1 Boliden<br></li>
-          <li>Zahlreiche GT-Rennwagen aus dem Porsche-Cup und der DTM<br></li>
-          <li>Eine schier endlose Palette weiterer Rennwagen, vom Fiat quinque quento bis zum McLaren</li>
+          <li><?= $translation->t('pages.tsc.angebot.f1-boliden') ?><br></li>
+          <li><?= $translation->t('pages.tsc.angebot.gt-boliden') ?><br></li>
+          <li><?= $translation->t('pages.tsc.angebot.weitereRW') ?></li>
           </p>
         </div>
         <div class="angebot">
           <img src="../images/angebot_3.jpg" alt="">
           <p>
-          Die Sitzposition unserer evo-tech Simulatoren
-          lassen sich mit ein paar Handgriffen von
-          GT-Rennwagen auf F1-Boliden umstellen. Dadurch
-          erleben Sie das Race noch intensiever.
+            <?= $translation->t('pages.tsc.angebot.angebot3') ?>
           </p>
         </div>
       </div>

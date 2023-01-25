@@ -52,22 +52,22 @@ if(isset($_POST["submit"])) {
 
   <main id="main-contact">
     <div class="contact-form">
-      <h1>kontakt</h1>
-      <p>Gerne stehen wir Ihnen für anfällige Fragen zur Verfügung.</p>
+      <h1><?= $translation->t('pages.sim.kontakt.title') ?></h1>
+      <p><?= $translation->t('pages.sim.kontakt.subtext') ?></p>
       <form name="contact" method="post" action="kontakt_sim.php" onsubmit="return validateForm()">
-        <input type="text" id="vorname" name="vorname" value="" placeholder="Vorname">
-        <input type="text" id="nachname" name="nachname" value="" placeholder="Nachname">
+        <input type="text" id="vorname" name="vorname" value="" placeholder="<?= $translation->t('pages.sim.kontakt.vorname') ?>">
+        <input type="text" id="nachname" name="nachname" value="" placeholder="<?= $translation->t('pages.sim.kontakt.nachname') ?>">
         <input type="email" id="email" name="email" value="" placeholder="Email">
-        <textarea id="message" name="message" value="" placeholder="Ihre Mitteilung" rows="7"></textarea>
-        <button type="submit" name="submit">senden</button>
+        <textarea id="message" name="message" value="" placeholder="<?= $translation->t('pages.sim.kontakt.mitteilung') ?>" rows="7"></textarea>
+        <button type="submit" name="submit"><?= $translation->t('pages.sim.kontakt.senden') ?></button>
       </form>
     </div>
     <div class="contact-info">
-      <p>Kontaktinformationen:<br><br>
+      <p><?= $translation->t('pages.sim.kontakt.info') ?>:<br><br>
       TOPSPEEDCENTER SOLOTHURN<br>
       Glutz-Blotzheim-Strasse 3<br>
       4500 Solothurn<br>
-      Schweiz<br><br>
+      <?= $translation->t('pages.sim.kontakt.schweiz') ?><br><br>
       +41 12 345 67 89<br>
       <a href="mailto:info@topspeedcenter.ch">info@topspeedcenter.ch</a></p>
       <div class="contact-icons">

@@ -1,0 +1,69 @@
+pages:
+  sim:
+    header:
+      kontakt: contact
+      simulatoren: simulators
+      impressum: imprint
+    home:
+      simulatoren: simulators
+      sub-text:
+        Experience unforgettable
+        racefeeling and feel
+        the adrenaline!
+      button: assemble now
+      bottom-text: 
+        Push the racing cars through the 
+        curves like a pro or enjoy the atmosphere
+        in the lounge with a view of large the screens.
+    kontakt:
+      title: contact
+      subtext: We will be happy to answer any questions you may have.
+      vorname: First name
+      nachname: Last name
+      mitteilung: Your message
+      senden: send
+      info: Contact information
+      schweiz: Switzerland
+    shop:
+      title: simulators
+      
+      button: assemble now
+  tsc:
+    header:
+      kontakt: contact
+      angebot: offer
+      buchen: book
+      impressum: imprint
+    angebot:
+      title:
+      f1-rennstrecken: All F1 race tracks
+      gt-rennstrecken: All GT race tracks
+      weitereRS: numerous other race tracks worldwide
+      F1-boliden: All F1 bolides
+      GT-boliden: Numerous GT race cars from the Porsche Cup and DTM
+      weitereRW: An almost endless range of other racing cars, from the Fiat quinque quento to the McLaren
+      angebot3: 
+       The seat position of our evo-tech simulators can be
+       changed from GT racing cars to F1 racing cars. 
+       This way you experience the race even more intensively.
+    impressum:
+      title: imprint
+    kontakt:
+      title: contact
+      subtext: Gerne stehen wir Ihnen für anfällige Fragen zur Verfügung.
+      vorname: First name
+      nachname: Last name
+      mitteilung: Your message
+      senden: send
+      info: Contact information
+      schweiz: Switzerland
+    topspeedcenter:
+      sub-text:
+        Experience unforgettable
+        racefeeling and feel
+        the adrenaline!
+      button: jetzt buchen
+      bottom-text: 
+        Push the racing cars through the 
+        curves like a pro or enjoy the atmosphere
+        in the lounge with a view of large the screens.

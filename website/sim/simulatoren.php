@@ -13,29 +13,24 @@
 <body>
 
   <?php
-    include '../../templates/header_sim.php';
+    include '../templates/header_sim.php';
   ?>
 
   <main id="main-home">
     <div class="main-bg home-sim"></div>
       <div class="header-text">
-        <h1>topspeed</h1>
-        <h2>simulatoren</h2>
-        <h2>solothurn</h2>
+        <h1>TopSpeedCenter</h1>
+        <h2><?= $translation->t('pages.sim.home.simulatoren') ?></h2>
         <p>
-          Erleben Sie unvergessliches
-          Racefeeling und spüren
-          Sie das Adrenalin!
+          <?= $translation->t('pages.sim.home.sub-text') ?>
         </p>
       </div>
       <div class="main-bottom">
         <button onclick="location.href='shop.php'" type="button">
-          jetzt zusammenstellen
+        <?= $translation->t('pages.sim.home.button') ?>
         </button>
         <p>
-        Pushen Sie die Rennboliden wie ein Profi 
-        durch die Kurven oder geniessen Sie die 
-        Atmosphäre in der Longe mit Sicht auf grosse Bildschirme.
+          <?= $translation->t('pages.sim.home.bottom-text') ?>
         </p>
       </div>
   </main>

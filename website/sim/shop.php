@@ -17,7 +17,7 @@
   ?>
 
   <main id="main-shop">
-    <h1>simulatoren</h1>
+    <h1><?= $translation->t('pages.sim.shop.title') ?></h1>
     <div class="sim-items">
       <h2>race</h2>
       <div class="simulator">
@@ -29,7 +29,7 @@
         <h3>info 3</h3>
         <p>info 3</p>
         <button onclick="location.href='sim-race.php'" type="button">
-          jetzt zusammenstellen
+          <?= $translation->t('pages.sim.shop.button') ?>
         </button>
       </div>
       <h2>pro</h2>
@@ -42,7 +42,7 @@
         <h3>info 3</h3>
         <p>info 3</p>
         <button onclick="location.href='sim-pro.php'" type="button">
-          jetzt zusammenstellen
+          <?= $translation->t('pages.sim.shop.button') ?>
         </button>
       </div>
       </div>

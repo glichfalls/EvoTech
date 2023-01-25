@@ -52,22 +52,22 @@ if(isset($_POST["submit"])) {
 
   <main id="main-contact">
     <div class="contact-form">
-      <h1>kontakt</h1>
-      <p>Gerne stehen wir Ihnen für anfällige Fragen zur Verfügung.</p>
+      <h1><?= $translation->t('pages.tsc.kontakt.title') ?></h1>
+      <p><?= $translation->t('pages.tsc.kontakt.subtext') ?></p>
       <form name="contact" method="post" action="kontakt.php" >
-        <input type="text" id="vorname" name="vorname" value="" placeholder="Vorname">
-        <input type="text" id="nachname" name="nachname" value="" placeholder="Nachname">
+        <input type="text" id="vorname" name="vorname" value="" placeholder="<?= $translation->t('pages.tsc.kontakt.vorname') ?>">
+        <input type="text" id="nachname" name="nachname" value="" placeholder="<?= $translation->t('pages.tsc.kontakt.nachname') ?>">
         <input type="email" id="email" name="email" value="" placeholder="Email">
-        <textarea id="message" name="message" value="" placeholder="Ihre Mitteilung" rows="7"></textarea>
-        <button type="submit" name="submit">senden</button>
+        <textarea id="message" name="message" value="" placeholder="<?= $translation->t('pages.tsc.kontakt.mitteilung') ?>" rows="7"></textarea>
+        <button type="submit" name="submit"><?= $translation->t('pages.tsc.kontakt.senden') ?></button>
       </form>
     </div>
     <div class="contact-info">
-      <p>Kontaktinformationen:<br><br>
+      <p><?= $translation->t('pages.tsc.kontakt.info') ?>:<br><br>
       TOPSPEEDCENTER SOLOTHURN<br>
       Glutz-Blotzheim-Strasse 3<br>
       4500 Solothurn<br>
-      Schweiz<br><br>
+      <?= $translation->t('pages.tsc.kontakt.schweiz') ?><br><br>
       +41 12 345 67 89<br>
       <a href="mailto:info@topspeedcenter.ch">info@topspeedcenter.ch</a></p>
       <div class="contact-icons">
@@ -77,9 +77,6 @@ if(isset($_POST["submit"])) {
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2710.687223223171!2d7.5273279201100145!3d47.20313416934962!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791d800a3a1fc97%3A0xe8eae74959be4f27!2sGlutz-Blotzheim-Strasse%203%2C%204500%20Solothurn!5e0!3m2!1sen!2sch!4v1673297725943!5m2!1sen!2sch" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </main>
-
-
-
 
 </body>
 </html>

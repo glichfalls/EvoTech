@@ -1,5 +1,70 @@
 pages:
+  sim:
+    header:
+      kontakt: kontakt
+      simulatoren: simulatoren
+      impressum: impressum
     home:
-        title:
-    sim-pro:
-        title: 'Test'
+      simulatoren: simulatoren
+      sub-text:
+        Erleben Sie unvergessliches
+        Racefeeling und spüren
+        Sie das Adrenalin!
+      button: jetzt zusammenstellen
+      bottom-text: 
+        Pushen Sie die Rennboliden wie ein Profi 
+        durch die Kurven oder geniessen Sie die 
+        Atmosphäre in der Longe mit Sicht auf grosse Bildschirme.
+    kontakt:
+      title: kontakt
+      subtext: Gerne stehen wir Ihnen für anfällige Fragen zur Verfügung.
+      vorname: Vorname
+      nachname: Nachname
+      mitteilung: Ihre Mitteilung
+      senden: senden
+      info: Kontaktinformationen
+      schweiz: Schweiz
+    shop:
+      title: simulatoren
+      
+      button: jetzt zusammenstellen
+  tsc:
+    header:
+      kontakt: kontakt
+      angebot: angebot
+      buchen: buchen
+      impressum: impressum
+    angebot:
+      title:
+      f1-rennstrecken: Sämtliche F1-Rennstrecken
+      gt-rennstrecken: Sämtliche GT-Rennstrecken
+      weitereRS: zahlreiche weitere Rennstrecken weltweit
+      F1-boliden: Sämtliche F1 Boliden
+      GT-boliden: Zahlreiche GT-Rennwagen aus dem Porsche-Cup und der DTM
+      weitereRW: Eine schier endlose Palette weiterer Rennwagen, vom Fiat quinque quento bis zum McLaren
+      angebot3: 
+        Die Sitzposition unserer evo-tech Simulatoren
+        lassen sich mit ein paar Handgriffen von
+        GT-Rennwagen auf F1-Boliden umstellen. Dadurch
+        erleben Sie das Race noch intensiever.
+    impressum:
+      title: impressum
+    kontakt:
+      title: kontakt
+      subtext: Gerne stehen wir Ihnen für anfällige Fragen zur Verfügung.
+      vorname: Vorname
+      nachname: Nachname
+      mitteilung: Ihre Mitteilung
+      senden: senden
+      info: Kontaktinformationen
+      schweiz: Schweiz
+    topspeedcenter:
+      sub-text:
+        Erleben Sie unvergessliches
+        Racefeeling und spüren
+        Sie das Adrenalin!
+      button: jetzt buchen
+      bottom-text: 
+        Pushen Sie die Rennboliden wie ein Profi 
+        durch die Kurven oder geniessen Sie die 
+        Atmosphäre in der Longe mit Sicht auf grosse Bildschirme.

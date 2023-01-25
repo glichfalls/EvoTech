@@ -13,11 +13,11 @@
 <body>
 
   <?php
-    include '../../templates/header_sim.php';
+    include '../templates/header_sim.php';
   ?>
 
   <main id="main-impressum">
-    <h1>impressum</h1>
+    <h1><?= $translation->t('pages.sim.header.impressum') ?></h1>
     <p>
     TopSpeedCenter GmbH<br>
     Glutz-Blotzheim-Strasse 3<br>

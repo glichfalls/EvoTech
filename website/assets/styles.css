@@ -195,6 +195,7 @@ button {
 #main-home .header-text h1 {
   font-size: 3rem;
   margin: 0;
+  text-transform: none;
 }
 #main-home .header-text p {
   font-size: 1.1rem;

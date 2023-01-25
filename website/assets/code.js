@@ -6,26 +6,16 @@ function sideMenuClose(){
   $('#side-menu').animate({left: '-75vw'}, 400);
 }
 
-/* function validateForm() {
-  let vorname = $('#message').val();
-  let vorname = document.forms["contact"]["vorname"].value;
-  let nachname = document.forms["contact"]["nachname"].value;
-  let email = document.forms["contact"]["email"].value;
-  let message = document.forms["contact"]["message"].value;
+function validateForm() {
+  let vorname = $('#vorname').val();
+  let nachname = $('#nachname').val();
+  let email = $('#email').val();
+  let message = $('#message').val();
   if (vorname || nachname || email || message == "") {
     alert("Bitte füllen Sie alle Felder aus.");
     return false;
   }
-} */
-
-/* $(document).ready(function() {
-  $('.desktop-nav a').click(function(e) {
-    $('.desktop-nav span .active').removeClass('active');
-    $(this).addClass('active');
-    e.preventDefault();
-  });
-});
- */
+}
 
 window.addEventListener("orientationchange", function() {
   orientationChanged();

@@ -19,21 +19,17 @@
   <main id="main-home">
     <div class="main-bg"></div>
       <div class="header-text">
-        <h1>topspeed<br>sim racing<br>solothurn</h1>
+        <h1>TopSpeedCenter<br>sim racing<br>solothurn</h1>
         <p>
-          Erleben Sie unvergessliches
-          Racefeeling und spüren
-          Sie das Adrenalin!
+          <?= $translation->t('pages.tsc.topspeedcenter.sub-text') ?>
         </p>
       </div>
       <div class="main-bottom">
         <button onclick="location.href='buchen.php'" type="button">
-          jetzt buchen
+          <?= $translation->t('pages.tsc.topspeedcenter.button') ?>
         </button>
         <p>
-        Pushen Sie die Rennboliden wie ein Profi 
-        durch die Kurven oder geniessen Sie die 
-        Atmosphäre in der Longe mit Sicht auf grosse Bildschirme.
+          <?= $translation->t('pages.tsc.topspeedcenter.bottom-text') ?>
         </p>
       </div>
   </main>
