@@ -1,3 +1,8 @@
+<?php 
+
+include '../bootstrap.php'; global $formData;
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

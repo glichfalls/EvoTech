@@ -1,10 +1,14 @@
 <?php
 
+if($_SERVER['SERVER_NAME']=='localhost') {
+  $_SERVER['DOCUMENT_ROOT']='C:\xampp\htdocs\EvoTech\website';
+}
+
 use EvoTech\Translation;
 
 include 'vendor/autoload.php';
 
-$locale = $_GET['lang'];
+$locale = $_GET['lang'] ?? 'de';
 
 if ($locale === 'de' || $locale === 'en') {
     $translation = new Translation($locale);
