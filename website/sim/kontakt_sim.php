@@ -1,5 +1,7 @@
 <?php
 
+include '../bootstrap.php'; global $formData;
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
@@ -31,7 +33,6 @@ if(isset($_POST["submit"])) {
 }
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
