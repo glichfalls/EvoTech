@@ -17,7 +17,7 @@ class Translation
         $this->locale = $locale;
         $translator = new Translator($locale);
         $translator->addLoader('yml', new YamlFileLoader());
-        $translator->addResource('yml', sprintf('%s/translations/%s.yaml', $_SERVER['DOCUMENT_ROOT'], $locale), $locale);
+        $translator->addResource('yml', sprintf('/translations/%s.yaml', $_SERVER['DOCUMENT_ROOT'], $locale), $locale);
         $translator->setFallbackLocales(['de']);
         $this->translator = $translator;
     }
