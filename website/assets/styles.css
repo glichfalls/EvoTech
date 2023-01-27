@@ -514,4 +514,49 @@ button {
     font-size: 5rem;
     margin: 0;
   }
+  #main-shop {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 10vh 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15vh;
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
+  }
+  #main-shop h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  #main-shop .sim-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20vw;
+    width: 85vw;
+  }
+  #main-shop .sim-items h2, #main-shop .sim-items h3 {
+    text-transform: uppercase;
+  }
+  #main-shop .sim-items .simulator {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+  #main-shop .sim-items .simulator p {
+    margin-top: 0.25rem;
+  }
+  #main-shop .sim-items .simulator img {
+    width: auto;
+    height: auto;
+  }
+  #main-shop .sim-items .simulator button {
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+    background-color: #FF2D2D;
+    width: 35%;
+    padding: 0.5rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

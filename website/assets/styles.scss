@@ -563,4 +563,47 @@ button {
       margin: 0;
     }
   }
+  
+  #main-shop {
+    @include main-div();
+    padding-top: 15vh;
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
+
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .sim-items {
+      @include flex-row();
+      justify-content: center;
+      gap: 20vw;
+      width: 85vw;
+
+      h2, h3 {
+        text-transform: uppercase;
+      }
+
+      .simulator {
+        @include flex-column();
+        width: 30%;
+
+        p {
+          margin-top: .25rem;
+        }
+
+        img {
+          width: auto;
+          height: auto;
+        }
+
+        button {
+          @include main-button();
+          width: 35%;
+          padding: .5rem;
+        }
+      }
+    }
+  }
 }

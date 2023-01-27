@@ -1,3 +1,8 @@
+<?php 
+
+include '../bootstrap.php'; global $formData;
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +18,7 @@
 <body>
 
   <?php
-    include '../../templates/header_tsc.php';
+    include '../templates/header_tsc.php';
   ?>
 
   <main id="main-angebot">

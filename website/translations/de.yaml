@@ -27,7 +27,7 @@ pages:
     shop:
       title: simulatoren
       
-      button: jetzt zusammenstellen
+      button: zusammenstellen
   tsc:
     header:
       kontakt: kontakt
