@@ -32,7 +32,7 @@ include '../bootstrap.php'; global $formData;
       </div>
       <div class="main-bottom">
         <button onclick="location.href='shop.php'" type="button">
-        <?= $translation->t('pages.sim.home.button') ?>
+          <?= $translation->t('pages.sim.home.button') ?>
         </button>
         <p>
           <?= $translation->t('pages.sim.home.bottom-text') ?>

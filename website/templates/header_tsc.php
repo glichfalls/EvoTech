@@ -11,8 +11,8 @@
     <a href="angebot.php"><?= $translation->t('pages.tsc.header.angebot') ?></a>
     <a href="buchen.php"><?= $translation->t('pages.tsc.header.buchen') ?></a>
     <a href="impressum.php"><?= $translation->t('pages.tsc.header.impressum') ?></a>
-    <a href="/?lang=<?= $translation->oppositeLocale() ?>">EN</a>
-    <a href="../index.php"><img src="../images/logo.png" alt=""></a>
+    <a href="/en/#">EN</a>
+    <a href="../index.php"><img src="../../images/logo.png" alt=""></a>
   </nav>
   <div id="side-menu">
     <div class="side-top">
