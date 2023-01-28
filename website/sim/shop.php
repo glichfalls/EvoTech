@@ -27,12 +27,7 @@ include '../bootstrap.php'; global $formData;
       <div class="simulator">
         <h2>race</h2>
         <img src="../images/angebot_3.jpg" alt="simulator race version">
-        <h3>info 1</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat adipisci veniam dolorem aperiam hic iste consequatur repellat non omnis repudiandae sunt, assumenda ea eveniet doloribus inventore facilis porro voluptate nesciunt.
-        Sint, eaque ut quam iure quos perspiciatis sed numquam amet aut facere deserunt excepturi reiciendis ducimus eos, delectus nostrum atque libero tempora cupiditate dolor optio dicta voluptatum culpa voluptatem! Quis!
-        Impedit iusto accusamus, magni nam corporis unde sit, sed amet hic harum blanditiis. Cumque iusto ipsa, ab voluptatem nostrum minus! Quisquam adipisci, repellat architecto corrupti modi neque eius facere sequi.
-        Eaque excepturi blanditiis est, sit nam magnam nobis expedita quis saepe impedit? Beatae eum, voluptatibus officiis, quibusdam praesentium totam iste quod laboriosam distinctio ad modi sunt ducimus corporis, cupiditate saepe.
-        Minus dolorum ex, error aspernatur dolores debitis sapiente officiis! Laborum adipisci maiores a, porro quo odio nihil, provident facilis fugiat aperiam tempore dignissimos animi molestias id voluptate quidem consectetur commodi!</p>
+        <p><?= $translation->t('pages.sim.shop.text-race') ?></p>
         <button onclick="location.href='sim-race.php'" type="button">
           <?= $translation->t('pages.sim.shop.button') ?>
         </button>
@@ -40,12 +35,7 @@ include '../bootstrap.php'; global $formData;
       <div class="simulator">
         <h2>pro</h2>
         <img src="../images/angebot_3.jpg" alt="simulator pro version">
-        <h3>info 1</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat adipisci veniam dolorem aperiam hic iste consequatur repellat non omnis repudiandae sunt, assumenda ea eveniet doloribus inventore facilis porro voluptate nesciunt.
-        Sint, eaque ut quam iure quos perspiciatis sed numquam amet aut facere deserunt excepturi reiciendis ducimus eos, delectus nostrum atque libero tempora cupiditate dolor optio dicta voluptatum culpa voluptatem! Quis!
-        Impedit iusto accusamus, magni nam corporis unde sit, sed amet hic harum blanditiis. Cumque iusto ipsa, ab voluptatem nostrum minus! Quisquam adipisci, repellat architecto corrupti modi neque eius facere sequi.
-        Eaque excepturi blanditiis est, sit nam magnam nobis expedita quis saepe impedit? Beatae eum, voluptatibus officiis, quibusdam praesentium totam iste quod laboriosam distinctio ad modi sunt ducimus corporis, cupiditate saepe.
-        Minus dolorum ex, error aspernatur dolores debitis sapiente officiis! Laborum adipisci maiores a, porro quo odio nihil, provident facilis fugiat aperiam tempore dignissimos animi molestias id voluptate quidem consectetur commodi!</p>
+        <p><?= $translation->t('pages.sim.shop.text-pro') ?></p>
         <button onclick="location.href='sim-pro.php'" type="button">
           <?= $translation->t('pages.sim.shop.button') ?>
         </button>

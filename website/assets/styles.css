@@ -532,8 +532,7 @@ button {
   #main-shop .sim-items {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 20vw;
+    justify-content: space-between;
     width: 85vw;
   }
   #main-shop .sim-items h2, #main-shop .sim-items h3 {
@@ -542,10 +541,7 @@ button {
   #main-shop .sim-items .simulator {
     display: flex;
     flex-direction: column;
-    width: 30%;
-  }
-  #main-shop .sim-items .simulator p {
-    margin-top: 0.25rem;
+    width: 40%;
   }
   #main-shop .sim-items .simulator img {
     width: auto;
@@ -558,5 +554,60 @@ button {
     background-color: #FF2D2D;
     width: 35%;
     padding: 0.5rem;
+  }
+  #main-sim-item {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 10vh 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  #main-sim-item .sim-item {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+  }
+  #main-sim-item .sim-item .slideshow {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 40vw;
+  }
+  #main-sim-item .sim-item .slideshow .slides {
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    overflow: hidden;
+  }
+  #main-sim-item .sim-item .slideshow .slides .slide {
+    width: 100%;
+  }
+  #main-sim-item .sim-item .thumbnails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #main-sim-item .sim-item .thumbnails .thumbnail {
+    cursor: pointer;
+    width: 25%;
+  }
+  #main-sim-item form {
+    width: 40vw;
+    gap: 1.5rem;
+  }
+  #main-sim-item form input, #main-sim-item form textarea {
+    font-size: 1.25rem;
+  }
+  #main-sim-item form button {
+    width: 30%;
+    font-size: 1.25rem;
+    padding: 0.75rem;
   }
 }/*# sourceMappingURL=styles.css.map */

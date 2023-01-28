@@ -26,8 +26,16 @@ pages:
       schweiz: Schweiz
     shop:
       title: simulatoren
-      
+      text-race:
+        Dank unserer einzigartigen Konstruktion lassen sich die TopSpeed-Simulatoren extrem schnell von der Formel 1 in die GT-Sitzposition umstellen. Dadurch erlebst Du Racing noch realistischer. 
+        Neben dem Sitz werden die Pedale und das Lenkrad geometrisch auf einander abgestimmt. 
+      text-pro:
+        Mit der Sitz- und Pedalverstellung kann jeder Fahrer mit einem Handgriff den Simulator auf seine Vorlieben und Körpergrösse einstellen - unabhängig von der F1-GT-Position. 
+        Wir verbauen nur hochwertige Komponenten. Wie z.B. die WheelBase von Fanatec oder Moza und Pedals von Heusinkveld. 
       button: zusammenstellen
+      send: Anfrage abschicken
+      sim-race: Simulator - Race
+      sim-pro: Simulator - Pro
   tsc:
     header:
       kontakt: kontakt
@@ -35,12 +43,12 @@ pages:
       buchen: buchen
       impressum: impressum
     angebot:
-      title:
+      title: angebot
       f1-rennstrecken: Sämtliche F1-Rennstrecken
       gt-rennstrecken: Sämtliche GT-Rennstrecken
       weitereRS: zahlreiche weitere Rennstrecken weltweit
-      F1-boliden: Sämtliche F1 Boliden
-      GT-boliden: Zahlreiche GT-Rennwagen aus dem Porsche-Cup und der DTM
+      f1-boliden: Sämtliche F1 Boliden
+      gt-boliden: Zahlreiche GT-Rennwagen aus dem Porsche-Cup und der DTM
       weitereRW: Eine schier endlose Palette weiterer Rennwagen, vom Fiat quinque quento bis zum McLaren
       angebot3: 
         Die Sitzposition unserer evo-tech Simulatoren

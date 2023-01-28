@@ -25,22 +25,28 @@ pages:
       info: Contact information
       schweiz: Switzerland
     shop:
-      title: simulators
+      title: 
+      text-race:
       
-      button: assemble now
+      text-pro:
+      
+      button: 
+      send:  
+      sim-race: Simulator - Race
+      sim-pro: Simulator - Pro
   tsc:
     header:
       kontakt: contact
-      angebot: offer
+      angebot: offers
       buchen: book
       impressum: imprint
     angebot:
-      title:
+      title: our offers
       f1-rennstrecken: All F1 race tracks
       gt-rennstrecken: All GT race tracks
       weitereRS: numerous other race tracks worldwide
-      F1-boliden: All F1 bolides
-      GT-boliden: Numerous GT race cars from the Porsche Cup and DTM
+      f1-boliden: All F1 bolides
+      gt-boliden: Numerous GT race cars from the Porsche Cup and DTM
       weitereRW: An almost endless range of other racing cars, from the Fiat quinque quento to the McLaren
       angebot3: 
        The seat position of our evo-tech simulators can be

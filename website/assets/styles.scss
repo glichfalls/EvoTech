@@ -577,8 +577,7 @@ button {
 
     .sim-items {
       @include flex-row();
-      justify-content: center;
-      gap: 20vw;
+      justify-content: space-between;
       width: 85vw;
 
       h2, h3 {
@@ -587,11 +586,7 @@ button {
 
       .simulator {
         @include flex-column();
-        width: 30%;
-
-        p {
-          margin-top: .25rem;
-        }
+        width: 40%;
 
         img {
           width: auto;
@@ -603,6 +598,63 @@ button {
           width: 35%;
           padding: .5rem;
         }
+      }
+    }
+  }
+
+  #main-sim-item {
+    @include main-div();
+    padding-top: 15vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+
+    .sim-item {
+      @include flex-column();
+      width: 40vw;
+
+      .slideshow {
+        @include flex-row();
+        position: relative;
+        width: 40vw;
+
+        .slides {
+          width: 40vw;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          list-style: none;
+          overflow: hidden;
+
+          .slide {
+            width: 100%;
+          }
+        }
+      }
+
+      .thumbnails {
+        @include flex-row();
+        justify-content: space-around;
+        align-items: center;
+
+        .thumbnail {
+          cursor: pointer;
+          width: 25%;
+        }
+      }
+    }
+
+    form {
+      width: 40vw;
+      gap: 1.5rem;
+  
+      input, textarea {
+        font-size: 1.25rem;
+      }
+  
+      button {
+        width: 30%;
+        font-size: 1.25rem;
+        padding: .75rem;
       }
     }
   }
