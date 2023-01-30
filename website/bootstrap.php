@@ -17,6 +17,13 @@ if ($locale === 'de' || $locale === 'en') {
 }
 
 $formData = [
+  'Basis' => [
+    'Einsatz' => [
+      ['label' => 'Privat'],
+      ['label' => 'Kommerziell'],
+    ],
+  ],
+  'Farben' => [
     'Einsatz' => [
         ['label' => 'Privat'],
         ['label' => 'Kommerziell'],
@@ -78,4 +85,5 @@ $formData = [
     ],
     'Fahrername' => [
     ],
+  ]
 ];

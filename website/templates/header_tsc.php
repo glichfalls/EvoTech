@@ -11,7 +11,7 @@
     <a href="angebot.php"><?= $translation->t('pages.tsc.header.angebot') ?></a>
     <a href="buchen.php"><?= $translation->t('pages.tsc.header.buchen') ?></a>
     <a href="impressum.php"><?= $translation->t('pages.tsc.header.impressum') ?></a>
-    <a href="/?lang=<?= $translation->oppositeLocale() ?>">EN</a>
+    <a href="<?= $translation->switchLanguage() ?>"><?= $translation->oppositeLocale() ?></a>
     <a href="../index.php"><img src="../images/logo.png" alt=""></a>
   </nav>
   <div id="side-menu">
@@ -32,8 +32,7 @@
       <a href="impressum.php"><?= $translation->t('pages.tsc.header.impressum') ?></a>
     </div>
     <div class="side-lang">
-      <a href="/de/#">DE</a>
-      <a href="/en/#">EN</a>
+      <a href="<?= $translation->switchLanguage() ?>"><?= $translation->oppositeLocale() ?></a>
     </div>
   </div>
 </header>

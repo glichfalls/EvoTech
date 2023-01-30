@@ -1,3 +1,7 @@
+function accordion(id) {
+  $('#' + id).toggleClass('show');
+}
+
 function sideMenuOpen(){
   $('#side-menu').animate({left: '75vw'}, 400);
 }

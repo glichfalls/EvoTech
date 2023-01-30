@@ -35,7 +35,12 @@ pages:
       button: zusammenstellen
       send: Anfrage abschicken
       sim-race: Simulator - Race
-      sim-pro: Simulator - Pro
+      sim-pro: 
+        title: Pro Simulator
+        desc: 
+          Das Pro steht zurecht für professional. Ausreden sind fehl am Platz. 
+          Exaktes Lenken mit perfektem Force-Feedback, hartes Bremsen oder gefühlvolles Beschleunigen, sowie ein mit seiner Grösse und Auflösung optimal abgestimmter Monitor.  
+          Hier werden nur HighEnd-Komponenten verbaut! 
   tsc:
     header:
       kontakt: kontakt
