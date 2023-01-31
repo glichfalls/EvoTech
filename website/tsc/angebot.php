@@ -48,7 +48,83 @@ include '../bootstrap.php'; global $formData;
           </p>
         </div>
       </div>
+      <div class="tarife">
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
+          <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+          <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+        </div>
+        <div id="London" class="tabcontent">
+        <div class="divTable" style="width: 30%;border: 1px solid #000;" >
+          <div class="divTableBody">
+          <div class="divTableRow">
+          <div class="divTableCell">&nbsp;</div>
+          <div class="divTableCell">&nbsp;</div>
+          <div class="divTableCell">&nbsp;</div>
+          <div class="divTableCell">&nbsp;</div>
+          <div class="divTableCell">&nbsp;</div>
+          </div>
+          <div class="divTableRow">
+          <div class="divTableCell">&nbsp;</div>
+          <div class="divTableCell">&nbsp;</div>
+          <div class="divTableCell">&nbsp;</div>
+          <div class="divTableCell">&nbsp;</div>
+          <div class="divTableCell">&nbsp;</div>
+          </div>
+          <div class="divTableRow">
+          <div class="divTableCell">&nbsp;</div>
+          <div class="divTableCell">&nbsp;</div>
+          <div class="divTableCell">&nbsp;</div>
+          <div class="divTableCell">&nbsp;</div>
+          <div class="divTableCell">&nbsp;</div>
+          </div>
+          <div class="divTableRow">
+          <div class="divTableCell">&nbsp;</div>
+          <div class="divTableCell">&nbsp;</div>
+          <div class="divTableCell">&nbsp;</div>
+          <div class="divTableCell">&nbsp;</div>
+          <div class="divTableCell">&nbsp;</div>
+          </div>
+          <div class="divTableRow">
+          <div class="divTableCell">&nbsp;</div>
+          <div class="divTableCell">&nbsp;</div>
+          <div class="divTableCell">&nbsp;</div>
+          <div class="divTableCell">&nbsp;</div>
+          <div class="divTableCell">&nbsp;</div>
+          </div>
+          </div>
+          </div>
+        </div>
+
+        <div id="Paris" class="tabcontent">
+          <h3>Paris</h3>
+          <p>Paris is the capital of France.</p> 
+        </div>
+
+        <div id="Tokyo" class="tabcontent">
+          <h3>Tokyo</h3>
+          <p>Tokyo is the capital of Japan.</p>
+        </div>
+      </div>
     </span>
   </main>
 </body>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
 </html>

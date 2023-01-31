@@ -384,6 +384,45 @@ button {
     font-size: 3rem;
     margin: 0;
   }
+
+  .tarife {
+    @include flex-row;
+    width: 100%;
+
+    .tab {
+      @include flex-column();
+
+      .divTable{
+        display: table;
+        width: 100%;
+      }
+      .divTableRow {
+        display: table-row;
+      }
+      .divTableHeading {
+        background-color: #EEE;
+        display: table-header-group;
+      }
+      .divTableCell, .divTableHead {
+        border: 1px solid #999999;
+        display: table-cell;
+        padding: 3px 10px;
+      }
+      .divTableHeading {
+        background-color: #EEE;
+        display: table-header-group;
+        font-weight: bold;
+      }
+      .divTableFoot {
+        background-color: #EEE;
+        display: table-footer-group;
+        font-weight: bold;
+      }
+      .divTableBody {
+        display: table-row-group;
+      }
+    }
+  }
 }
 
 /* buchen */
@@ -642,13 +681,16 @@ button {
   }
 
   #main-sim-item {
+    .accordion-button{
+      padding: .25rem;
+    }
+
     @include main-div();
-    padding-top: 15vh;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding: 10vh 5vw;
 
     .all-item {
       @include flex-row();
+      justify-content: center;
       gap: 1.5rem;
 
       .sim-item {
@@ -688,6 +730,8 @@ button {
       }
 
       form {
+        margin-top: 1rem;
+        margin-left: none;
         width: 40vw;
 
         p {
@@ -696,6 +740,8 @@ button {
     
         input, textarea {
           font-size: 1.25rem;
+          margin: .5rem;
+          margin-left: 0;
         }
     
         button {

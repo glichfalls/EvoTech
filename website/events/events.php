@@ -24,8 +24,8 @@ include '../bootstrap.php'; global $formData;
   <main id="main-home">
     <div class="main-bg home-sim"></div>
       <div class="header-text">
-        <h1>TopSpeedCenter Events</h1>
-        <h2>text</h2>
+        <h1>TopSpeedCenter</h1>
+        <h2>Events</h2>
         <p>
           text
         </p>

@@ -69,6 +69,7 @@ if(isset($_POST["submit"])) {
   ?>
 
   <main id="main-sim-item">
+    <h1><?= $translation->t('pages.sim.shop.sim-pro.title') ?></h1>
     <div class="all-item">
       <div class="sim-item">
         <div class="slideshow">
@@ -87,48 +88,48 @@ if(isset($_POST["submit"])) {
           <img id="thumbnail_3" src="../images/sneaker/img17.jpg" alt="" class="thumbnail">
           <img id="thumbnail_4" src="../images/sneaker/img25.jpg" alt="" class="thumbnail">
         </div>
+        <div class="sim-text">
+          <p><?= $translation->t('pages.sim.shop.sim-pro.desc') ?></p>
+        </div>
       </div>
-      <div class="sim-text">
-        <h1><?= $translation->t('pages.sim.shop.sim-pro.title') ?></h1>
-        <p><?= $translation->t('pages.sim.shop.sim-pro.desc') ?></p>
+      <div class="item-all-right">
+        <div class="accordion" id="accordionExample">
+          <h2>Zwischentotal : <span id="total">0</span></h2>
+          <?php foreach ($formData as $mainCategory => $categories): ?>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button onclick="accordion('<?= $mainCategory ?>')" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="<?= $mainCategory ?>">
+                  <h2><?= $mainCategory ?></h2>
+                </button>
+              </h2>
+              <?php foreach ($categories as $category => $row): ?>
+              <div id="<?= $mainCategory ?>" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p><?= $category ?></p>
+                  <select class="form-select" name="<?= $category ?>">
+                    <?php foreach ($row as $column): ?>
+                      <option value="<?= $column['label'] ?>" data-price="<?= $column['price'] ?? 0 ?>">
+                        <?= $column['label'] ?> <?php if(isset($column['price'])): ?> (<?= $column['price'] ?>) <?php endif; ?>
+                      </option>
+                    <?php endforeach ?>
+                  </select>
+                </div>
+              </div>
+              <?php endforeach ?>
+            </div>
+          <?php endforeach ?>
+        </div>
+        <form id="form-container">
+          <input class="form-control" type="text" id="vorname" name="vorname" value="" placeholder="Vorname">
+          <input class="form-control" type="text" id="nachname" name="nachname" value="" placeholder="Nachname">
+          <input class="form-control" type="text" id="strasse" name="strasse" value="" placeholder="Strasse, Nr.">
+          <input class="form-control" type="text" id="ort" name="ort" value="" placeholder="PLZ, Ort">
+          <input class="form-control" type="email" id="email" name="email" value="" placeholder="Email">
+          <input class="form-control" type="text" id="tel" name="tel" value="" placeholder="Tel. Nr.">
+          <button type="submit" name="submit"><?= $translation->t('pages.sim.shop.send') ?></button>
+        </form>
       </div>
     </div>
-
-    <form id="form-container">
-      <div class="accordion" id="accordionExample">
-        <?php foreach ($formData as $mainCategory => $categories): ?>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button onclick="accordion('<?= $mainCategory ?>')" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="<?= $mainCategory ?>">
-                <h2><?= $mainCategory ?></h2>
-              </button>
-            </h2>
-            <?php foreach ($categories as $category => $row): ?>
-            <div id="<?= $mainCategory ?>" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <p><?= $category ?></p>
-                <select class="form-select" name="<?= $category ?>">
-                  <?php foreach ($row as $column): ?>
-                    <option value="<?= $column['label'] ?>" data-price="<?= $column['price'] ?? 0 ?>">
-                      <?= $column['label'] ?> <?php if(isset($column['price'])): ?> (<?= $column['price'] ?>) <?php endif; ?>
-                    </option>
-                  <?php endforeach ?>
-                </select>
-              </div>
-            </div>
-            <?php endforeach ?>
-          </div>
-        <?php endforeach ?>
-      </div>
-      <p id="total">0</p>
-      <input class="form-control" type="text" id="vorname" name="vorname" value="" placeholder="Vorname">
-      <input class="form-control" type="text" id="nachname" name="nachname" value="" placeholder="Nachname">
-      <input class="form-control" type="text" id="strasse" name="strasse" value="" placeholder="Strasse, Nr.">
-      <input class="form-control" type="text" id="ort" name="ort" value="" placeholder="PLZ, Ort">
-      <input class="form-control" type="email" id="email" name="email" value="" placeholder="Email">
-      <input class="form-control" type="text" id="tel" name="tel" value="" placeholder="Tel. Nr.">
-      <button type="submit" name="submit"><?= $translation->t('pages.sim.shop.send') ?></button>
-    </form>
   </main>
 </body>
   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
