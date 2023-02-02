@@ -1,7 +1,7 @@
 <?php
 
 if($_SERVER['SERVER_NAME']=='localhost') {
-  $_SERVER['DOCUMENT_ROOT']='C:\xampp\htdocs\EvoTech\website';
+  //$_SERVER['DOCUMENT_ROOT']='C:\xampp\htdocs\EvoTech\website';
 }
 
 use EvoTech\Translation;
@@ -102,9 +102,7 @@ $formData = [
     ],
   ],
   'Numberplates' => [
-    'Startnummer' => [
-        /* input */
-    ],
+    'Startnummer' => 'input',
     'Nummer-Design' => [
       ['label' => 'Wähle eine Nummerdesign', 'price' => 0],
       ['label' => 'Code - 01', 'price' => 0],
@@ -136,13 +134,9 @@ $formData = [
       ['label' => 'grau', 'price' => 0],
       ['label' => 'Petronas Blau - 34E4CB', 'price' => 0]
     ],
-    'Fahrername' => [
-        /* input */
-    ],
+    'Fahrername' => 'input'
   ],
   'Bemerkungen' => [
-    'Bemerkungen' => [
-      /* textarea */
-    ]
+    'Bemerkungen' => 'textarea'
   ]
 ];

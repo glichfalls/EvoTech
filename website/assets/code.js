@@ -15,7 +15,7 @@ function validateForm() {
   let nachname = $('#nachname').val();
   let email = $('#email').val();
   let message = $('#message').val();
-  if (vorname || nachname || email || message === "") {
+  if (vorname === "" || nachname === "" || email === "" || message === "") {
     alert("Bitte füllen Sie alle Felder aus.");
     return false;
   }
@@ -169,11 +169,13 @@ $(document).ready(function() {
       return Object.values(prices).reduce((previousValue, currentValue) => previousValue + currentValue, 0);
     };
 
-    container.find('select').on('click', function (e) {
+    container.find('select').on('change', function (e) {
       const option = $(this).find('option:selected');
       const category = $(this).attr('name');
       prices[category] = Number(option.data('price'));
-      $('#total').html(getTotal());
+      const newTotal = getTotal();
+      console.log(newTotal);
+      $('#total').html(newTotal);
     });
 
   }
