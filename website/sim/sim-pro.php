@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 include '../bootstrap.php'; global $formData;
 
@@ -22,7 +22,7 @@ if(isset($_POST["submit"])) {
   $mail->addAddress("robin.ingold@hotmail.com", "robin");
 
   $mail->Subject = "Webanfrage Simulatoren";
-  $mail->Body = 
+  $mail->Body =
   "Vorname: " . $_POST["vorname"] .
   "\r\n \r\n Nachname: " . $_POST["nachname"] .
   "\r\n \r\n Strasse: " . $_POST["strasse"] .
@@ -93,33 +93,40 @@ if(isset($_POST["submit"])) {
         </div>
       </div>
       <div class="item-all-right">
-        <div class="accordion" id="accordionExample">
+          <form id="form-container" method="post" onsubmit="return validateForm()">
+        <div class="accordion" id="formAccordion">
           <h2>Zwischentotal : <span id="total">0</span></h2>
           <?php foreach ($formData as $mainCategory => $categories): ?>
             <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button onclick="accordion('<?= $mainCategory ?>')" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="<?= $mainCategory ?>">
-                  <h2><?= $mainCategory ?></h2>
+              <h2 class="accordion-header my-0" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#<?= $mainCategory ?>">
+                  <?= $mainCategory ?>
                 </button>
               </h2>
-              <?php foreach ($categories as $category => $row): ?>
-              <div id="<?= $mainCategory ?>" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <p><?= $category ?></p>
-                  <select class="form-select" name="<?= $category ?>">
-                    <?php foreach ($row as $column): ?>
-                      <option value="<?= $column['label'] ?>" data-price="<?= $column['price'] ?? 0 ?>">
-                        <?= $column['label'] ?> <?php if(isset($column['price'])): ?> (<?= $column['price'] ?>) <?php endif; ?>
-                      </option>
-                    <?php endforeach ?>
-                  </select>
-                </div>
+            <div id="<?= $mainCategory ?>" class="accordion-collapse collapse" data-bs-parent="#formAccordion">
+              <div class="accordion-body">
+                <?php foreach ($categories as $category => $row): ?>
+                    <p><?= $category ?></p>
+                    <?php if(is_array($row)): ?>
+                      <select class="form-select" name="<?= $category ?>">
+                        <?php foreach ($row as $column): ?>
+                          <option value="<?= $column['label'] ?>" data-price="<?= $column['price'] ?? 0 ?>">
+                            <?= $column['label'] ?>
+                          </option>
+                        <?php endforeach ?>
+                      </select>
+                    <?php elseif($row === 'input'): ?>
+                      <input class="form-control" type="text" name="<?= $category ?>" />
+                    <?php elseif($row === 'textarea'): ?>
+                       <textarea class="form-control" name="<?= $category ?>"></textarea>
+                    <?php endif ?>
+                <?php endforeach ?>
               </div>
-              <?php endforeach ?>
+            </div>
+
             </div>
           <?php endforeach ?>
         </div>
-        <form id="form-container">
           <input class="form-control" type="text" id="vorname" name="vorname" value="" placeholder="Vorname">
           <input class="form-control" type="text" id="nachname" name="nachname" value="" placeholder="Nachname">
           <input class="form-control" type="text" id="strasse" name="strasse" value="" placeholder="Strasse, Nr.">
