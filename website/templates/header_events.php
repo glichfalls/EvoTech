@@ -6,7 +6,7 @@
     <img src="../images/logo.png" alt="TopSpeedCenter Logo">
   </nav>
   <nav id="desktop-nav">
-    <a href="/<?= $translation->locale() ?>/topspeedcenter.php">home</a>
+    <a href="topspeedcenter.php">home</a>
     <a href="kontakt.php"><?= $translation->t('pages.tsc.header.kontakt') ?></a>
     <a href="angebot.php"><?= $translation->t('pages.tsc.header.angebot') ?></a>
     <a href="buchen.php"><?= $translation->t('pages.tsc.header.buchen') ?></a>

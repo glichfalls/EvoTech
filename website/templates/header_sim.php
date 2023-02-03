@@ -6,7 +6,7 @@
     <img src="../images/logo.png" alt="TopSpeedCenter Logo">
   </nav>
   <nav id="desktop-nav">
-    <a href="/<?= $translation->locale() ?>/simulatoren.php">home</a>
+    <a href="simulatoren.php">home</a>
     <a href="kontakt_sim.php"><?= $translation->t('pages.sim.header.kontakt') ?></a>
     <a href="shop.php"><?= $translation->t('pages.sim.header.simulatoren') ?></a>
     <a href="impressum_sim.php"><?= $translation->t('pages.sim.header.impressum') ?></a>

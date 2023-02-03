@@ -95,8 +95,8 @@ if(isset($_POST["submit"])) {
       <div class="item-all-right">
           <form id="form-container" method="post" onsubmit="return validateForm()">
         <div class="accordion" id="formAccordion">
-          <h2>Zwischentotal : <span id="total">0</span></h2>
-          <?php foreach ($formData as $mainCategory => $categories): ?>
+          <h2>Zwischentotal : <span id="total">10'608</span> CHF</h2>
+          <?php foreach ($formDataPro as $mainCategory => $categories): ?>
             <div class="accordion-item">
               <h2 class="accordion-header my-0" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#<?= $mainCategory ?>">

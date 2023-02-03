@@ -34,7 +34,8 @@ pages:
         Wir verbauen nur hochwertige Komponenten. Wie z.B. die WheelBase von Fanatec oder Moza und Pedals von Heusinkveld. 
       button: zusammenstellen
       send: Anfrage abschicken
-      sim-race: Simulator - Race
+      sim-race:
+        title: Race Simulator
       sim-pro: 
         title: Pro Simulator
         desc: 
