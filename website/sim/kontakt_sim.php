@@ -16,7 +16,7 @@ if(isset($_POST["submit"])) {
   $mail->Host = "smtp.gmail.com";
   $mail->SMTPAuth = true;
   $mail->Username = "robin.ingold22@gmail.com";
-  $mail->Password = "tbhqmjafghaegojk";
+  $mail->Password = "erxkhoqfkmmitout";
 
   $mail->setFrom("robin.ingold22@gmail.com", "sender");
   $mail->addAddress("robin.ingold@hotmail.com", "robin");

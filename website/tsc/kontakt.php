@@ -16,7 +16,7 @@ if(isset($_POST["submit"])) {
   $mail->Host = "smtp.gmail.com";
   $mail->SMTPAuth = true;
   $mail->Username = "robin.ingold22@gmail.com";
-  $mail->Password = "tbhqmjafghaegojk";
+  $mail->Password = "erxkhoqfkmmitout";
 
   $mail->setFrom("robin.ingold22@gmail.com", "sender");
   $mail->addAddress("robin.ingold@hotmail.com", "robin");
@@ -43,7 +43,6 @@ if(isset($_POST["submit"])) {
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="../assets/code.js"></script>
   <title>TopSpeedCenter Solothurn</title>
 </head>
 <body>
@@ -56,7 +55,7 @@ if(isset($_POST["submit"])) {
     <div class="contact-form">
       <h1><?= $translation->t('pages.tsc.kontakt.title') ?></h1>
       <p><?= $translation->t('pages.tsc.kontakt.subtext') ?></p>
-      <form name="contact" method="post" action="kontakt.php" >
+      <form name="contact" method="post" action="kontakt.php" onsubmit="return validateForm()">
         <input type="text" id="vorname" name="vorname" value="" placeholder="<?= $translation->t('pages.tsc.kontakt.vorname') ?>">
         <input type="text" id="nachname" name="nachname" value="" placeholder="<?= $translation->t('pages.tsc.kontakt.nachname') ?>">
         <input type="email" id="email" name="email" value="" placeholder="Email">
@@ -81,4 +80,5 @@ if(isset($_POST["submit"])) {
   </main>
 
 </body>
+<script type="text/javascript" src="../assets/code.js"></script>
 </html>

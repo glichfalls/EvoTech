@@ -21,6 +21,17 @@ function validateForm() {
   }
 }
 
+function validateSim() {
+  let vorname = $('#vorname').val();
+  let nachname = $('#nachname').val();
+  let email = $('#email').val();
+  let message = $('#message').val();
+  if (vorname === "" || nachname === "" || email === "" || message === "") {
+    alert("Bitte füllen Sie alle Felder aus.");
+    return false;
+  }
+}
+
 window.addEventListener("orientationchange", function() {
   orientationChanged();
 });

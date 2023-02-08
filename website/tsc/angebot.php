@@ -49,82 +49,44 @@ include '../bootstrap.php'; global $formData;
         </div>
       </div>
       <div class="tarife">
-        <div class="tab">
-          <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
-          <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-          <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-        </div>
-        <div id="London" class="tabcontent">
-        <div class="divTable" style="width: 30%;border: 1px solid #000;" >
-          <div class="divTableBody">
-          <div class="divTableRow">
-          <div class="divTableCell">&nbsp;</div>
-          <div class="divTableCell">&nbsp;</div>
-          <div class="divTableCell">&nbsp;</div>
-          <div class="divTableCell">&nbsp;</div>
-          <div class="divTableCell">&nbsp;</div>
-          </div>
-          <div class="divTableRow">
-          <div class="divTableCell">&nbsp;</div>
-          <div class="divTableCell">&nbsp;</div>
-          <div class="divTableCell">&nbsp;</div>
-          <div class="divTableCell">&nbsp;</div>
-          <div class="divTableCell">&nbsp;</div>
-          </div>
-          <div class="divTableRow">
-          <div class="divTableCell">&nbsp;</div>
-          <div class="divTableCell">&nbsp;</div>
-          <div class="divTableCell">&nbsp;</div>
-          <div class="divTableCell">&nbsp;</div>
-          <div class="divTableCell">&nbsp;</div>
-          </div>
-          <div class="divTableRow">
-          <div class="divTableCell">&nbsp;</div>
-          <div class="divTableCell">&nbsp;</div>
-          <div class="divTableCell">&nbsp;</div>
-          <div class="divTableCell">&nbsp;</div>
-          <div class="divTableCell">&nbsp;</div>
-          </div>
-          <div class="divTableRow">
-          <div class="divTableCell">&nbsp;</div>
-          <div class="divTableCell">&nbsp;</div>
-          <div class="divTableCell">&nbsp;</div>
-          <div class="divTableCell">&nbsp;</div>
-          <div class="divTableCell">&nbsp;</div>
-          </div>
-          </div>
-          </div>
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active text-danger" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+              Erwachsene
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-danger" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+            Familien-Ermässigung 2. erw. Person
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-danger" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">
+            Schüler, Lehrlinge und Studenten
+            </button>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">Content 1</div>
+          <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">Content 2</div>
+          <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">Content 3</div>
         </div>
 
-        <div id="Paris" class="tabcontent">
-          <h3>Paris</h3>
-          <p>Paris is the capital of France.</p> 
-        </div>
-
-        <div id="Tokyo" class="tabcontent">
-          <h3>Tokyo</h3>
-          <p>Tokyo is the capital of Japan.</p>
-        </div>
       </div>
     </span>
   </main>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../assets/code.js"></script>
+<script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
 <script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+var firstTabEl = document.querySelector('#myTab li:last-child a')
+  var firstTab = new bootstrap.Tab(firstTabEl)
+
+  firstTab.show()
+
 </script>
 </html>

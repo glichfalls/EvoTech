@@ -150,7 +150,7 @@ button {
   z-index: 900;
     
   a {
-    color: white;
+    color: $color-font;
     font-size: 1.75rem;
     text-transform: uppercase;
   }
@@ -357,42 +357,8 @@ button {
   }
 
   .tarife {
-    @include flex-row;
+    @include flex-column;
     width: 100%;
-
-    .tab {
-      @include flex-column();
-
-      .divTable{
-        display: table;
-        width: 100%;
-      }
-      .divTableRow {
-        display: table-row;
-      }
-      .divTableHeading {
-        background-color: #EEE;
-        display: table-header-group;
-      }
-      .divTableCell, .divTableHead {
-        border: 1px solid #999999;
-        display: table-cell;
-        padding: 3px 10px;
-      }
-      .divTableHeading {
-        background-color: #EEE;
-        display: table-header-group;
-        font-weight: bold;
-      }
-      .divTableFoot {
-        background-color: #EEE;
-        display: table-footer-group;
-        font-weight: bold;
-      }
-      .divTableBody {
-        display: table-row-group;
-      }
-    }
   }
 }
 

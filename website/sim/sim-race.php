@@ -16,7 +16,7 @@ if(isset($_POST["submit"])) {
   $mail->Host = "smtp.gmail.com";
   $mail->SMTPAuth = true;
   $mail->Username = "robin.ingold22@gmail.com";
-  $mail->Password = "tbhqmjafghaegojk";
+  $mail->Password = "erxkhoqfkmmitout";
 
   $mail->setFrom("robin.ingold22@gmail.com", "sender");
   $mail->addAddress("robin.ingold@hotmail.com", "robin");
@@ -73,18 +73,17 @@ if(isset($_POST["submit"])) {
     <div class="all-item">
       <div class="sim-item">
         <div class="slideshow">
-          <div class="left"></div>
           <div class="slides">
-            <img id="slide_1" src="../images/sneaker/img01.jpg" alt="" class="slide">
-            <img id="slide_2" src="../images/sneaker/img09.jpg" alt="" class="slide">
-            <img id="slide_3" src="../images/sneaker/img17.jpg" alt="" class="slide">
-            <img id="slide_4" src="../images/sneaker/img25.jpg" alt="" class="slide">
+            <img id="slide_1" src="../images/sneaker/img09.jpg" alt="" class="slide active">
+            <img id="slide_2" src="../images/sneaker/img17.jpg" alt="" class="slide">
+            <img id="slide_3" src="../images/sneaker/img25.jpg" alt="" class="slide">
+            <img id="slide_4" src="../images/sneaker/img01.jpg" alt="" class="slide">
           </div>
           <div class="right"></div>
         </div>
         <div class="thumbnails">
-          <img id="thumbnail_1" src="../images/sneaker/img09.jpg" alt="" class="thumbnail">
-          <img id="thumbnail_2" src="../images/sneaker/img17.jpg" alt="" class="thumbnail">
+          <img id="thumbnail_1" src="../images/sneaker/img01.jpg" alt="" class="thumbnail">
+          <img id="thumbnail_2" src="../images/sneaker/img09.jpg" alt="" class="thumbnail">
           <img id="thumbnail_3" src="../images/sneaker/img17.jpg" alt="" class="thumbnail">
           <img id="thumbnail_4" src="../images/sneaker/img25.jpg" alt="" class="thumbnail">
         </div>
@@ -93,7 +92,7 @@ if(isset($_POST["submit"])) {
         </div>
       </div>
       <div class="item-all-right">
-          <form id="form-container" method="post" onsubmit="return validateForm()">
+          <form id="form-container" method="post" onsubmit="return validateSim()">
         <div class="accordion" id="formAccordion">
           <h2>Zwischentotal : <span id="total">10'608</span> CHF</h2>
           <?php foreach ($formDataRace as $mainCategory => $categories): ?>

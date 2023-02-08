@@ -24,7 +24,7 @@
       </span>
     </div>
     <div class="side-menu-links">
-      <a href="index.php">home</a>
+      <a href="simulatoren.php">home</a>
       <a href="kontakt.php"><?= $translation->t('pages.sim.header.kontakt') ?></a>
       <a href="shop.php"><?= $translation->t('pages.sim.header.simulatoren') ?></a>
       <a href="impressum.php"><?= $translation->t('pages.sim.header.impressum') ?></a>

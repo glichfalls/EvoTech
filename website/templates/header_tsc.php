@@ -25,7 +25,7 @@
       </span>
     </div>
     <div class="side-menu-links">
-      <a href="index.php" class="active">home</a>
+      <a href="topspeedcenter.php" class="active">home</a>
       <a href="kontakt.php"><?= $translation->t('pages.tsc.header.kontakt') ?></a>
       <a href="angebot.php"><?= $translation->t('pages.tsc.header.angebot') ?></a>
       <a href="buchen.php"><?= $translation->t('pages.tsc.header.buchen') ?></a>
