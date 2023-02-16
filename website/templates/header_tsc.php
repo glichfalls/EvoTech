@@ -3,7 +3,7 @@
     <span class="toggle" onclick="sideMenuOpen()">
       <a href="#"><i class="fa-sharp fa-solid fa-bars"></i></a>
     </span>
-    <img src="../images/logo.png" alt="TopSpeedCenter Logo">
+    <a href="../index.php"><img src="../images/logo.png" alt="Logo"></a>
   </nav>
   <nav id="desktop-nav">
     <a href="topspeedcenter.php">home</a>
@@ -12,7 +12,7 @@
     <a href="buchen.php"><?= $translation->t('pages.tsc.header.buchen') ?></a>
     <a href="impressum.php"><?= $translation->t('pages.tsc.header.impressum') ?></a>
     <a href="<?= $translation->switchLanguage() ?>"><?= $translation->oppositeLocale() ?></a>
-    <a href="../index.php"><img src="../images/logo.png" alt=""></a>
+    <a href="../index.php"><img src="../images/logo.png" alt="Logo"></a>
   </nav>
   <div id="side-menu">
     <div class="side-top">

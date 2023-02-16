@@ -3,7 +3,7 @@
     <span class="toggle" onclick="sideMenuOpen()">
       <a href="#"><i class="fa-sharp fa-solid fa-bars"></i></a>
     </span>
-    <img src="../images/logo.png" alt="TopSpeedCenter Logo">
+    <a href="../index.php"><img src="../images/logo.png" alt="Logo"></a>
   </nav>
   <nav id="desktop-nav">
     <a href="simulatoren.php">home</a>
@@ -11,7 +11,7 @@
     <a href="shop.php"><?= $translation->t('pages.sim.header.simulatoren') ?></a>
     <a href="impressum_sim.php"><?= $translation->t('pages.sim.header.impressum') ?></a>
     <a href="<?= $translation->switchLanguage() ?>"><?= $translation->oppositeLocale() ?></a>
-    <a href="../index.php"><img src="../images/logo.png" alt=""></a>
+    <a href="../index.php"><img src="../images/logo.png" alt="Logo"></a>
   </nav>
   <div id="side-menu">
     <div class="side-top">
@@ -25,7 +25,7 @@
     </div>
     <div class="side-menu-links">
       <a href="simulatoren.php">home</a>
-      <a href="kontakt.php"><?= $translation->t('pages.sim.header.kontakt') ?></a>
+      <a href="kontakt_sim.php"><?= $translation->t('pages.sim.header.kontakt') ?></a>
       <a href="shop.php"><?= $translation->t('pages.sim.header.simulatoren') ?></a>
       <a href="impressum.php"><?= $translation->t('pages.sim.header.impressum') ?></a>
     </div>

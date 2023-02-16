@@ -22,60 +22,247 @@ include '../bootstrap.php'; global $formData;
   ?>
 
   <main id="main-angebot">
-    <span>
-      <h1><?= $translation->t('pages.tsc.angebot.title') ?></h1>
-      <div class="angebot-items">
-        <div class="angebot">
-          <img src="../images/angebot_1.jpg" alt="">
-          <p>
-            <li><?= $translation->t('pages.tsc.angebot.f1-rennstrecken') ?><br></li>
-            <li><?= $translation->t('pages.tsc.angebot.gt-rennstrecken') ?><br></li>
-            <li><?= $translation->t('pages.tsc.angebot.weitereRS') ?></li>
-          </p>
+    <h1><?= $translation->t('pages.tsc.angebot.title') ?></h1>
+      <div class="times">
+        <div class="zeiten"> 
+          <h2><?= $translation->t('pages.tsc.angebot.o-zeiten') ?></h2>
+          <span></span>
+          <span></span>
+          <p><?= $translation->t('pages.tsc.angebot.mo-do') ?></p>
+          <p>07:00</p>
+          <p>22:00</p>
+          <p><?= $translation->t('pages.tsc.angebot.freitag') ?></p>
+          <p>07:00</p>
+          <p>23:00</p>
+          <p><?= $translation->t('pages.tsc.angebot.samstag') ?></p>
+          <p>10:00</p>
+          <p>23:00</p>
+          <p><?= $translation->t('pages.tsc.angebot.sonntag') ?></p>
+          <p>10:00</p>
+          <p>19:00</p>
         </div>
-        <div class="angebot">
-          <img src="../images/angebot_2.jpg" alt="">
-          <p>
-          <li><?= $translation->t('pages.tsc.angebot.f1-boliden') ?><br></li>
-          <li><?= $translation->t('pages.tsc.angebot.gt-boliden') ?><br></li>
-          <li><?= $translation->t('pages.tsc.angebot.weitereRW') ?></li>
-          </p>
-        </div>
-        <div class="angebot">
-          <img src="../images/angebot_3.jpg" alt="">
-          <p>
-            <?= $translation->t('pages.tsc.angebot.angebot3') ?>
-          </p>
+        <div class="nebenzeiten"> 
+          <h2><?= $translation->t('pages.tsc.angebot.n-zeiten') ?></h2>
+          <span></span>
+          <p><?= $translation->t('pages.tsc.angebot.hauptzeiten-mo-fr') ?></p>
+          <p class="time"><?= $translation->t('pages.tsc.angebot.ab') ?> 16:00</p>
+          <p><?= $translation->t('pages.tsc.angebot.wochenende-feiertage') ?></p>
+          <p class="time"><?= $translation->t('pages.tsc.angebot.ganzer-tag') ?></p>
+          <p><?= $translation->t('pages.tsc.angebot.nebenzeiten-mo-fr') ?></p>
+          <p class="time"><?= $translation->t('pages.tsc.angebot.bis') ?> 16:00</p>
         </div>
       </div>
       <div class="tarife">
-
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
-            <button class="nav-link active text-danger" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
-              Erwachsene
+            <button class="nav-link active text-danger" id="erwachsene-tab" data-bs-toggle="tab" data-bs-target="#erwachsene" type="button" role="tab" aria-controls="erwachsene" aria-selected="true">
+            <?= $translation->t('pages.tsc.angebot.erwachsene') ?>
             </button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link text-danger" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
-            Familien-Ermässigung 2. erw. Person
+            <button class="nav-link text-danger" id="familien-tab" data-bs-toggle="tab" data-bs-target="#familien" type="button" role="tab" aria-controls="familien" aria-selected="false">
+            <?= $translation->t('pages.tsc.angebot.familien') ?>
             </button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link text-danger" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">
-            Schüler, Lehrlinge und Studenten
+            <button class="nav-link text-danger" id="studenten-tab" data-bs-toggle="tab" data-bs-target="#studenten" type="button" role="tab" aria-controls="studenten" aria-selected="false">
+            <?= $translation->t('pages.tsc.angebot.studenten') ?>
             </button>
           </li>
         </ul>
-
         <div class="tab-content">
-          <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">Content 1</div>
-          <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">Content 2</div>
-          <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">Content 3</div>
+          <div class="tab-pane active" id="erwachsene" role="tabpanel" aria-labelledby="erwachsene-tab">
+            <div class="tarife-grid"> 
+              <h2 class="table-title"><?= $translation->t('pages.tsc.angebot.tarife') ?></h2>
+              <h4 class="tarife-mwst"><?= $translation->t('pages.tsc.angebot.einzelfahrt') ?></h4>
+              <span></span>
+              <span></span>
+              <span></span>
+              <p class="one">Start 30min</p>
+              <p class="item-center"><?= $translation->t('pages.tsc.angebot.hauptzeit') ?></p>
+              <p class="item-center"><?= $translation->t('pages.tsc.angebot.nebenzeit') ?></p>
+              <p class="item-center">29.-</p>
+              <p class="item-center">22.-</p>
+              <p><?= $translation->t('pages.tsc.angebot.alle-weiteren') ?> 30min</p>
+              <p class="item-center">19.-</p>
+              <p class="item-center">14.-</p>
+              <span></span>
+              <span></span>
+              <span></span>
+              <h4 class="tarife-mwst"><?= $translation->t('pages.tsc.angebot.gutscheine') ?></h4>
+              <p class="two">1x 30min</p>
+              <p class="item-center"><?= $translation->t('pages.tsc.angebot.hauptzeit') ?></p>
+              <p class="item-center"><?= $translation->t('pages.tsc.angebot.nebenzeit') ?></p>
+              <p class="item-center">29.-</p>
+              <p class="item-center">22.-</p>
+              <p>5x 30min</p>
+              <p class="item-center">145.-</p>
+              <p class="item-center">110.-</p>
+              <p>10x 30min(Bonus 1x 30min)</p>
+              <p class="item-center">290.-</p>
+              <p class="item-center">220.-</p>
+              <span></span>
+              <span></span>
+              <span></span>
+              <p>1x 60min</p>
+              <p class="item-center">48.-</p>
+              <p class="item-center">36.-</p>
+              <p>5x 60min(Bonus 1x 30min)</p>
+              <p class="item-center">240.-</p>
+              <p class="item-center">180.-</p>
+              <p>10x 60min(Bonus 3x 30min)</p>
+              <p class="item-center">480.-</p>
+              <p class="item-center">360.-</p>
+              <span></span>
+              <span></span>
+              <span></span>
+              <h4 class="tarife-mwst"><?= $translation->t('pages.tsc.angebot.lizenzen') ?></h4>
+              <p class="three">Gold - Semi-License</p>
+              <p class="item-center"><?= $translation->t('pages.tsc.angebot.halbj-karte') ?></p>
+              <p class="item-center"><?= $translation->t('pages.tsc.angebot.jahreskarte') ?></p>
+              <p class="item-center">335.-</p>
+              <p class="item-center">450.-</p>
+              <p>Family - Semi-License</p>
+              <p class="item-center">450.-</p>
+              <p class="item-center">599.-</p>
+              <p></p>
+            </div>
+          </div>
+          <div class="tab-pane" id="familien" role="tabpanel" aria-labelledby="familien-tab">
+            <div class="tarife-grid"> 
+              <h2 class="table-title"><?= $translation->t('pages.tsc.angebot.tarife') ?></h2>
+              <h4 class="tarife-mwst"><?= $translation->t('pages.tsc.angebot.einzelfahrt') ?></h4>
+              <span></span>
+              <span></span>
+              <span></span>
+              <p class="one">Start 30min</p>
+              <p class="item-center"><?= $translation->t('pages.tsc.angebot.hauptzeit') ?></p>
+              <p class="item-center"><?= $translation->t('pages.tsc.angebot.nebenzeit') ?></p>
+              <p class="item-center">23.-</p>
+              <p class="item-center">18.-</p>
+              <p><?= $translation->t('pages.tsc.angebot.alle-weiteren') ?> 30min</p>
+              <p class="item-center">15.-</p>
+              <p class="item-center">11.-</p>
+              <span></span>
+              <span></span>
+              <span></span>
+              <h4 class="tarife-mwst"><?= $translation->t('pages.tsc.angebot.gutscheine') ?></h4>
+              <p class="two">1x 30min</p>
+              <p class="item-center"><?= $translation->t('pages.tsc.angebot.hauptzeit') ?></p>
+              <p class="item-center"><?= $translation->t('pages.tsc.angebot.nebenzeit') ?></p>
+              <p class="item-center">23.-</p>
+              <p class="item-center">18.-</p>
+              <p>5x 30min</p>
+              <p class="item-center">115.-</p>
+              <p class="item-center">90.-</p>
+              <p>10x 30min(Bonus 1x 30min)</p>
+              <p class="item-center">230.-</p>
+              <p class="item-center">180.-</p>
+              <span></span>
+              <span></span>
+              <span></span>
+              <p>1x 60min</p>
+              <p class="item-center">38.-</p>
+              <p class="item-center">29.-</p>
+              <p>5x 60min(Bonus 1x 30min)</p>
+              <p class="item-center">190.-</p>
+              <p class="item-center">145.-</p>
+              <p>10x 60min(Bonus 3x 30min)</p>
+              <p class="item-center">380.-</p>
+              <p class="item-center">290.-</p>
+              <span></span>
+              <span></span>
+              <span></span>
+              <h4 class="tarife-mwst"><?= $translation->t('pages.tsc.angebot.lizenzen') ?></h4>
+              <p class="three">Gold - Semi-License</p>
+              <p class="item-center"><?= $translation->t('pages.tsc.angebot.halbj-karte') ?></p>
+              <p class="item-center"><?= $translation->t('pages.tsc.angebot.jahreskarte') ?></p>
+              <p class="item-center"></p>
+              <p class="item-center"></p>
+              <p>Family - Semi-License</p>
+              <p class="item-center license"><?= $translation->t('pages.tsc.angebot.inbegriffen') ?></p>
+              <p class="item-center"></p>
+              <p></p>
+            </div>
+          </div>
+          <div class="tab-pane" id="studenten" role="tabpanel" aria-labelledby="studenten-tab">
+            <div class="tarife-grid"> 
+              <h2 class="table-title"><?= $translation->t('pages.tsc.angebot.tarife') ?></h2>
+              <h4 class="tarife-mwst"><?= $translation->t('pages.tsc.angebot.einzelfahrt') ?></h4>
+              <span></span>
+              <span></span>
+              <span></span>
+              <p class="one">Start 30min</p>
+              <p class="item-center"><?= $translation->t('pages.tsc.angebot.hauptzeit') ?></p>
+              <p class="item-center"><?= $translation->t('pages.tsc.angebot.nebenzeit') ?></p>
+              <p class="item-center">17.-</p>
+              <p class="item-center">13.-</p>
+              <p><?= $translation->t('pages.tsc.angebot.alle-weiteren') ?> 30min</p>
+              <p class="item-center">11.-</p>
+              <p class="item-center">8.-</p>
+              <span></span>
+              <span></span>
+              <span></span>
+              <h4 class="tarife-mwst"><?= $translation->t('pages.tsc.angebot.gutscheine') ?></h4>
+              <p class="two">1x 30min</p>
+              <p class="item-center"><?= $translation->t('pages.tsc.angebot.hauptzeit') ?></p>
+              <p class="item-center"><?= $translation->t('pages.tsc.angebot.nebenzeit') ?></p>
+              <p class="item-center">17.-</p>
+              <p class="item-center">13.-</p>
+              <p>5x 30min</p>
+              <p class="item-center">85.-</p>
+              <p class="item-center">65.-</p>
+              <p>10x 30min(Bonus 1x 30min)</p>
+              <p class="item-center">170.-</p>
+              <p class="item-center">130.-</p>
+              <span></span>
+              <span></span>
+              <span></span>
+              <p>1x 60min</p>
+              <p class="item-center">28.-</p>
+              <p class="item-center">21.-</p>
+              <p>5x 60min(Bonus 1x 30min)</p>
+              <p class="item-center">140.-</p>
+              <p class="item-center">105.-</p>
+              <p>10x 60min(Bonus 3x 30min)</p>
+              <p class="item-center">280.-</p>
+              <p class="item-center">210.-</p>
+              <span></span>
+              <span></span>
+              <span></span>
+              <h4 class="tarife-mwst"><?= $translation->t('pages.tsc.angebot.lizenzen') ?></h4>
+              <p class="three">Gold - Semi-License</p>
+              <p class="item-center"><?= $translation->t('pages.tsc.angebot.halbj-karte') ?></p>
+              <p class="item-center"><?= $translation->t('pages.tsc.angebot.jahreskarte') ?></p>
+              <p class="item-center">302.-</p>
+              <p class="item-center">405.-</p>
+              <p>Family - Semi-License</p>
+              <p class="item-center license"><?= $translation->t('pages.tsc.angebot.inbegriffen') ?></p>
+              <p class="item-center"></p>
+            </div>
+          </div>
+          <div class="zusatzinfos-div">
+            <h3><?= $translation->t('pages.tsc.angebot.zusatzinformationen.title') ?></h3>
+            <hr>
+            <div class="zusatzinformationen">
+              <p>1)</p>
+              <p><span><?= $translation->t('pages.tsc.angebot.zusatzinformationen.p-one') ?></span> <?= $translation->t('pages.tsc.angebot.zusatzinformationen.p-one-two') ?></p>
+              <p>2)</p>
+              <p><span><?= $translation->t('pages.tsc.angebot.zusatzinformationen.p-two') ?></span> <?= $translation->t('pages.tsc.angebot.zusatzinformationen.p-two-two') ?></p>
+              <p>3)</p>
+              <p><span><?= $translation->t('pages.tsc.angebot.zusatzinformationen.p-three') ?></span> <?= $translation->t('pages.tsc.angebot.zusatzinformationen.p-three-two') ?></p>
+              <p>4)</p>
+              <p><span><?= $translation->t('pages.tsc.angebot.zusatzinformationen.p-four') ?></span> <?= $translation->t('pages.tsc.angebot.zusatzinformationen.p-four-two') ?></p>
+              <p>5)</p>
+              <p><span><?= $translation->t('pages.tsc.angebot.zusatzinformationen.p-five-one') ?></span> <?= $translation->t('pages.tsc.angebot.zusatzinformationen.p-five-one-two') ?></p>
+              <span></span>
+              <p><span><?= $translation->t('pages.tsc.angebot.zusatzinformationen.p-five-two') ?></span> <?= $translation->t('pages.tsc.angebot.zusatzinformationen.p-five-two-two') ?></p>
+              <span></span>
+              <p><span><?= $translation->t('pages.tsc.angebot.zusatzinformationen.p-five-three') ?></span> <?= $translation->t('pages.tsc.angebot.zusatzinformationen.p-five-three-two') ?></p>
+            </div>
+          </div>
         </div>
-
       </div>
-    </span>
   </main>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
@@ -84,9 +271,8 @@ include '../bootstrap.php'; global $formData;
 <script>
 
 var firstTabEl = document.querySelector('#myTab li:last-child a')
-  var firstTab = new bootstrap.Tab(firstTabEl)
-
-  firstTab.show()
+var firstTab = new bootstrap.Tab(firstTabEl)
+firstTab.show()
 
 </script>
 </html>

@@ -24,7 +24,9 @@ include '../bootstrap.php'; global $formData;
   <main id="main-home">
     <div class="main-bg"></div>
       <div class="header-text">
-        <h1>TopSpeedCenter<br>sim racing<br>solothurn</h1>
+        <h1>TopSpeedCenter</h1>
+        <h2>sim racing</h2>
+        <h2>solothurn</h2>
         <p>
           <?= $translation->t('pages.tsc.topspeedcenter.sub-text') ?>
         </p>

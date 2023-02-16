@@ -27,12 +27,12 @@ include '../bootstrap.php'; global $formData;
     TopSpeedCenter GmbH<br>
     Glutz-Blotzheim-Strasse 3<br>
     4500 Solothurn<br><br>
-    Geschäftsleitung:<br>
+    <?= $translation->t('pages.tsc.impressum.leitung') ?>:<br>
     Christoph Flury<br>
     Barbara Flury<br>
     Cyrille Flury<br>
     info@topspeedcenter.ch<br><br>
-    Handelsregisteramt des Kanton Berns<br>
+    <?= $translation->t('pages.tsc.impressum.register') ?><br>
     Firmen-Nr.: CHE-198.529.402<br>
     MwSt-Nr.: CHE-198.529.402
     </p>

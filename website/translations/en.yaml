@@ -34,6 +34,10 @@ pages:
       send:  
       sim-race: Simulator - Race
       sim-pro: Simulator - Pro
+    impressum:
+      title: imprint
+      leitung: Management
+      register: Commercial Register Office of the Canton of Bern
   tsc:
     header:
       kontakt: contact
@@ -41,19 +45,52 @@ pages:
       buchen: book
       impressum: imprint
     angebot:
-      title: our offers
-      f1-rennstrecken: All F1 race tracks
-      gt-rennstrecken: All GT race tracks
-      weitereRS: numerous other race tracks worldwide
-      f1-boliden: All F1 bolides
-      gt-boliden: Numerous GT race cars from the Porsche Cup and DTM
-      weitereRW: An almost endless range of other racing cars, from the Fiat quinque quento to the McLaren
-      angebot3: 
-       The seat position of our evo-tech simulators can be
-       changed from GT racing cars to F1 racing cars. 
-       This way you experience the race even more intensively.
+      title: offers
+      o-zeiten: opening hours
+      n-zeiten: main / auxiliary times
+      mo-do: monday to thursday
+      freitag: friday
+      samstag: saturday
+      sonntag: sunday
+      hauptzeiten-mo-fr: main times mo - fr
+      ab: from
+      wochenende-feiertage: weekends and holidays
+      ganzer-tag: whole day
+      nebenzeiten-mo-fr: off-peak hours mo - fr
+      bis: until
+      erwachsene: Adults
+      familien: Family discount 2nd adult person
+      studenten: Pupils, apprentices and students
+      tarife: Tariffs and offers
+      einzelfahrt: Single trips - Rates in CHF incl. VAT
+      hauptzeit: main times
+      nebenzeit: off-peak hours
+      alle-weiteren: all further
+      gutscheine: Vouchers/Bonus Cards - Rates in CHF incl. VAT
+      lizenzen: Licenses - Rates in CHF incl. VAT
+      halbj-karte: half-year pass
+      jahreskarte: annual pass
+      inbegriffen: included in the Family Semi-License
+      zusatzinformationen:
+        title: Additional Information
+        p-one: Family discount
+        p-one-two: for families with one child or more and living in the same household
+        p-two: Pupils
+        p-two-two: from 10 years or 140cm height
+        p-three: Apprentices and students
+        p-three-two: (on request only with apprentice/student ID)
+        p-four: Vouchers, bonus cards and licenses
+        p-four-two: - no redemption and no cash payment
+        p-five-one: Licenses
+        p-five-one-two: -50% discount on single rides during peak and off-peak hours (except events)
+        p-five-two: Family - Semi-License
+        p-five-two-two: valid for all persons of the family living in the same household - card is not transferable !
+        p-five-three: Gold - Semi-License
+        p-five-three-two: Card is not transferable !
     impressum:
       title: imprint
+      leitung: Management
+      register: Commercial Register Office of the Canton of Bern
     kontakt:
       title: contact
       subtext: We will be happy to answer any questions you may have.
@@ -68,7 +105,7 @@ pages:
         Experience unforgettable
         racefeeling and feel
         the adrenaline!
-      button: jetzt buchen
+      button: book now
       bottom-text: 
         Push the racing cars through the 
         curves like a pro or enjoy the atmosphere

@@ -69,18 +69,17 @@ if(isset($_POST["submit"])) {
       Glutz-Blotzheim-Strasse 3<br>
       4500 Solothurn<br>
       <?= $translation->t('pages.sim.kontakt.schweiz') ?><br><br>
-      +41 12 345 67 89<br>
+      +41 78 628 04 02<br>
       <a href="mailto:info@topspeedcenter.ch">info@topspeedcenter.ch</a></p>
       <div class="contact-icons">
         <a href="https://tinyurl.com/2cpzted3"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://tinyurl.com/3xznjs3k"><i class="fa-brands fa-square-facebook"></i></a>
       </div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2710.687223223171!2d7.5273279201100145!3d47.20313416934962!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791d800a3a1fc97%3A0xe8eae74959be4f27!2sGlutz-Blotzheim-Strasse%203%2C%204500%20Solothurn!5e0!3m2!1sen!2sch!4v1673297725943!5m2!1sen!2sch" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2710.687223223171!2d7.5273279201100145!3d47.20313416934962!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791d800a3a1fc97%3A0xe8eae74959be4f27!2sGlutz-Blotzheim-Strasse%203%2C%204500%20Solothurn!5e0!3m2!1sen!2sch!4v1673297725943!5m2!1sen!2sch" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
   </main>
-
-
-
 
 </body>
 </html>

@@ -42,6 +42,10 @@ pages:
           Das Pro steht zurecht für professional. Ausreden sind fehl am Platz. 
           Exaktes Lenken mit perfektem Force-Feedback, hartes Bremsen oder gefühlvolles Beschleunigen, sowie ein mit seiner Grösse und Auflösung optimal abgestimmter Monitor.  
           Hier werden nur HighEnd-Komponenten verbaut! 
+    impressum:
+      title: impressum
+      leitung: Geschäftsleitung
+      register: Handelsregisteramt des Kanton Berns
   tsc:
     header:
       kontakt: kontakt
@@ -50,19 +54,51 @@ pages:
       impressum: impressum
     angebot:
       title: angebot
-      f1-rennstrecken: Sämtliche F1-Rennstrecken
-      gt-rennstrecken: Sämtliche GT-Rennstrecken
-      weitereRS: zahlreiche weitere Rennstrecken weltweit
-      f1-boliden: Sämtliche F1 Boliden
-      gt-boliden: Zahlreiche GT-Rennwagen aus dem Porsche-Cup und der DTM
-      weitereRW: Eine schier endlose Palette weiterer Rennwagen, vom Fiat quinque quento bis zum McLaren
-      angebot3: 
-        Die Sitzposition unserer evo-tech Simulatoren
-        lassen sich mit ein paar Handgriffen von
-        GT-Rennwagen auf F1-Boliden umstellen. Dadurch
-        erleben Sie das Race noch intensiever.
+      o-zeiten: öffnungszeiten
+      n-zeiten: haupt-/nebenzeiten
+      mo-do: montag bis donnerstag
+      freitag: freitag
+      samstag: samstag
+      sonntag: sonntag
+      hauptzeiten-mo-fr: hauptzeiten mo - fr
+      ab: ab
+      wochenende-feiertage: wochenende und feiertage
+      ganzer-tag: ganzer tag
+      nebenzeiten-mo-fr: nebenzeiten mo - fr
+      bis: bis
+      erwachsene: Erwachsene
+      familien: Familien-Ermässigung 2. erw. Person
+      studenten: Schüler, Lehrlinge und Studenten
+      tarife: Tarife und Angebote
+      einzelfahrt: Einzelfahrten - Tarife in CHF inkl. MwSt
+      hauptzeit: Hauptzeiten
+      nebenzeit: Nebenzeiten
+      alle-weiteren: alle weiteren
+      gutscheine: Gutscheine/Bonuskarten - Tarife in CHF inkl. MwSt
+      lizenzen: Lizenzen - Tarife in CHF inkl. MwSt
+      halbj-karte: Halbj. Karte
+      jahreskarte: Jahreskarte
+      inbegriffen: in Family Semi-License inbegriffen
+      zusatzinformationen:
+        title: Zusatzinformationen
+        p-one: Familien-Ermässigung
+        p-one-two: für Familien ab einem Kind und im gleichen Haushalt lebend
+        p-two: Schüler
+        p-two-two: ab 10 Jahren oder 140cm Grösse
+        p-three: Lehrlinge und Studenten
+        p-three-two: (auf Verlangen nur mit Lehrlings-/Studenten-Ausweis)
+        p-four: Gutscheine, Bonuskarten und Lizenzen
+        p-four-two: - keine Rücknahme und keine Barauszahlung
+        p-five-one: Lizenzen
+        p-five-one-two: -Ermässigung auf Einzelfahrten in Haupt- und Nebenzeiten von 50% (ausser Events)
+        p-five-two: Family - Semi-Lizenz
+        p-five-two-two: gilt für alle Personen der Familie im gleichen Haushalt lebend - Karte ist nicht übertragbar !
+        p-five-three: Gold - Semi-Lizenz
+        p-five-three-two: Karte ist nicht übertragbar !
     impressum:
       title: impressum
+      leitung: Geschäftsleitung
+      register: Handelsregisteramt des Kanton Berns
     kontakt:
       title: kontakt
       subtext: Gerne stehen wir Ihnen für anfällige Fragen zur Verfügung.
