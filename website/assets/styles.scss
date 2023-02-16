@@ -38,7 +38,7 @@ $font-heavy: 700;
   height: auto;
   width: 100vw;
   box-sizing: border-box;
-  padding: 20vh 5vw 10vh 5vw;
+  padding: 15vh 5vw 10vh 5vw;
   @include flex-column();
 }
 
@@ -514,6 +514,9 @@ button {
   }
 
   .sim-items {
+    .simulatoren {
+      @include flex-column();
+    }
     
     .simulator {
       width: 85vw;
@@ -526,6 +529,87 @@ button {
       img {
         width: 100%;
         margin-bottom: 1rem;
+      }
+
+      button {
+        @include main-button();
+      }
+    }
+  }
+}
+
+#main-sim-item {
+  .accordion-button{
+    padding: .25rem;
+  }
+
+  @include main-div();
+  padding: 10vh 5vw;
+
+  .all-item {
+    @include flex-column();
+    justify-content: center;
+    gap: 1.5rem;
+
+    .sim-item {
+      @include flex-column();
+
+      .slideshow {
+        @include flex-row();
+        position: relative;
+
+        .slides {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          list-style: none;
+          overflow: hidden;
+
+          .slide {
+            position: relative;
+            max-width: 100%;
+          }
+        }
+      }
+
+      .thumbnails {
+        @include flex-row();
+        justify-content: space-around;
+        align-items: center;
+
+        .thumbnail {
+          cursor: pointer;
+          width: 25%;
+        }
+      }
+
+      .sim-text {
+        margin-top: 1rem;
+      }
+    }
+
+    form {
+      margin-top: 1rem;
+      margin-left: none;
+
+      h2 {
+        font-size: 1.3rem;
+      }
+
+      p {
+        margin: .25rem;
+      }
+  
+      input, textarea {
+        font-size: 1rem;
+        margin: .5rem;
+        margin-left: 0;
+      }
+
+      button {
+        width: auto;
+        font-size: 1rem;
+        padding: .75rem;
       }
     }
   }
@@ -776,6 +860,35 @@ button {
     .contact-info {
       .maps {
         display: block;
+      }
+    }
+  }
+
+  #main-shop {
+
+    .sim-items {
+
+      .simulatoren {
+        flex-direction: row;
+        gap: 2rem;
+      }
+    }
+  }
+
+  #main-sim-item {
+    flex-direction: column;
+    padding-top: 15vh;
+
+    .all-item {
+      flex-direction: row;
+      justify-content: space-between;
+
+      .sim-item {
+        width: 45vw;
+      }
+
+      .item-all-right {
+        width: 45vw
       }
     }
   }
@@ -1057,6 +1170,16 @@ button {
     }
   }
 
+  #main-shop {
+
+    .sim-items {
+      
+      .allg-text {
+        width: 70%;
+      }
+    }
+  }
+
 }
 
 @media only screen and (min-width: 1919px) and (orientation: landscape) {
@@ -1159,7 +1282,7 @@ button {
     }
 
     .sim-items {
-      @include flex-row();
+      @include flex-column();
       justify-content: space-between;
       width: 85vw;
 
@@ -1167,21 +1290,30 @@ button {
         text-transform: uppercase;
       }
 
-      .simulator {
-        @include flex-column();
-        width: 40%;
+      p {
+        font-size: 1.2rem;
+      }
 
-        img {
-          width: auto;
-          height: auto;
-        }
-
-        button {
-          @include main-button();
-          width: 35%;
-          padding: .5rem;
+      .simulatoren {
+        flex-direction: row;
+        justify-content: space-between;
+        
+        .simulator {
+          @include flex-column();
+          width: 40vw;
+  
+          img {
+            width: auto;
+            height: auto;
+          }
+  
+          button {
+            width: 35%;
+            padding: .5rem;
+          }
         }
       }
+
     }
   }
 
@@ -1191,7 +1323,6 @@ button {
     }
 
     @include main-div();
-    padding: 10vh 5vw;
 
     .all-item {
       @include flex-row();
@@ -1200,15 +1331,15 @@ button {
 
       .sim-item {
         @include flex-column();
-        width: 40vw;
+        width: 45vw;
 
         .slideshow {
           @include flex-row();
           position: relative;
-          width: 40vw;
+          width: 45vw;
 
           .slides {
-            width: 40vw;
+            width: 45vw;
             display: flex;
             justify-content: flex-start;
             align-items: center;

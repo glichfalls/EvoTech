@@ -11169,7 +11169,7 @@ button {
   height: auto;
   width: 100vw;
   box-sizing: border-box;
-  padding: 20vh 5vw 10vh 5vw;
+  padding: 15vh 5vw 10vh 5vw;
   display: flex;
   flex-direction: column;
 }
@@ -11224,7 +11224,7 @@ button {
   height: auto;
   width: 100vw;
   box-sizing: border-box;
-  padding: 20vh 5vw 10vh 5vw;
+  padding: 15vh 5vw 10vh 5vw;
   display: flex;
   flex-direction: column;
   padding: 15vh 5vw 5vh 5vw;
@@ -11354,7 +11354,7 @@ button {
   height: auto;
   width: 100vw;
   box-sizing: border-box;
-  padding: 20vh 5vw 10vh 5vw;
+  padding: 15vh 5vw 10vh 5vw;
   display: flex;
   flex-direction: column;
 }
@@ -11368,7 +11368,7 @@ button {
   height: auto;
   width: 100vw;
   box-sizing: border-box;
-  padding: 20vh 5vw 10vh 5vw;
+  padding: 15vh 5vw 10vh 5vw;
   display: flex;
   flex-direction: column;
   padding-left: 7.5vw;
@@ -11377,6 +11377,10 @@ button {
 #main-shop h1, #main-shop .h1 {
   font-size: 2rem;
   margin: 0 0 2rem 0;
+}
+#main-shop .sim-items .simulatoren {
+  display: flex;
+  flex-direction: column;
 }
 #main-shop .sim-items .simulator {
   width: 85vw;
@@ -11389,13 +11393,91 @@ button {
   width: 100%;
   margin-bottom: 1rem;
 }
+#main-shop .sim-items .simulator button {
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  background-color: #FF2D2D;
+}
+
+#main-sim-item {
+  height: auto;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 15vh 5vw 10vh 5vw;
+  display: flex;
+  flex-direction: column;
+  padding: 10vh 5vw;
+}
+#main-sim-item .accordion-button {
+  padding: 0.25rem;
+}
+#main-sim-item .all-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+#main-sim-item .all-item .sim-item {
+  display: flex;
+  flex-direction: column;
+}
+#main-sim-item .all-item .sim-item .slideshow {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+#main-sim-item .all-item .sim-item .slideshow .slides {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  overflow: hidden;
+}
+#main-sim-item .all-item .sim-item .slideshow .slides .slide {
+  position: relative;
+  max-width: 100%;
+}
+#main-sim-item .all-item .sim-item .thumbnails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#main-sim-item .all-item .sim-item .thumbnails .thumbnail {
+  cursor: pointer;
+  width: 25%;
+}
+#main-sim-item .all-item .sim-item .sim-text {
+  margin-top: 1rem;
+}
+#main-sim-item .all-item form {
+  margin-top: 1rem;
+  margin-left: none;
+}
+#main-sim-item .all-item form h2, #main-sim-item .all-item form .h2 {
+  font-size: 1.3rem;
+}
+#main-sim-item .all-item form p {
+  margin: 0.25rem;
+}
+#main-sim-item .all-item form input, #main-sim-item .all-item form textarea {
+  font-size: 1rem;
+  margin: 0.5rem;
+  margin-left: 0;
+}
+#main-sim-item .all-item form button {
+  width: auto;
+  font-size: 1rem;
+  padding: 0.75rem;
+}
 
 /* impressum */
 #main-impressum {
   height: auto;
   width: 100vw;
   box-sizing: border-box;
-  padding: 20vh 5vw 10vh 5vw;
+  padding: 15vh 5vw 10vh 5vw;
   display: flex;
   flex-direction: column;
 }
@@ -11517,6 +11599,24 @@ button {
   #main-contact .contact-info .maps {
     display: block;
   }
+  #main-shop .sim-items .simulatoren {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  #main-sim-item {
+    flex-direction: column;
+    padding-top: 15vh;
+  }
+  #main-sim-item .all-item {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #main-sim-item .all-item .sim-item {
+    width: 45vw;
+  }
+  #main-sim-item .all-item .item-all-right {
+    width: 45vw;
+  }
 }
 @media only screen and (min-width: 1365px) and (orientation: landscape) {
   .index-menu {
@@ -11584,7 +11684,7 @@ button {
     height: auto;
     width: 100vw;
     box-sizing: border-box;
-    padding: 20vh 5vw 10vh 5vw;
+    padding: 15vh 5vw 10vh 5vw;
     display: flex;
     flex-direction: column;
     flex-direction: row;
@@ -11634,7 +11734,7 @@ button {
     height: auto;
     width: 100vw;
     box-sizing: border-box;
-    padding: 20vh 5vw 10vh 5vw;
+    padding: 15vh 5vw 10vh 5vw;
     display: flex;
     flex-direction: column;
     padding: 15vh 7vw 5vh 7vw;
@@ -11753,6 +11853,9 @@ button {
   #main-angebot .tarife .tab-content .zusatzinformationen span {
     font-weight: 1000;
   }
+  #main-shop .sim-items .allg-text {
+    width: 70%;
+  }
 }
 @media only screen and (min-width: 1919px) and (orientation: landscape) {
   .index-menu {
@@ -11811,7 +11914,7 @@ button {
     height: auto;
     width: 100vw;
     box-sizing: border-box;
-    padding: 20vh 5vw 10vh 5vw;
+    padding: 15vh 5vw 10vh 5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11827,7 +11930,7 @@ button {
     height: auto;
     width: 100vw;
     box-sizing: border-box;
-    padding: 20vh 5vw 10vh 5vw;
+    padding: 15vh 5vw 10vh 5vw;
     display: flex;
     flex-direction: column;
     padding-top: 15vh;
@@ -11840,27 +11943,30 @@ button {
   }
   #main-shop .sim-items {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     width: 85vw;
   }
   #main-shop .sim-items h2, #main-shop .sim-items .h2, #main-shop .sim-items h3, #main-shop .sim-items .h3 {
     text-transform: uppercase;
   }
-  #main-shop .sim-items .simulator {
+  #main-shop .sim-items p {
+    font-size: 1.2rem;
+  }
+  #main-shop .sim-items .simulatoren {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #main-shop .sim-items .simulatoren .simulator {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 40vw;
   }
-  #main-shop .sim-items .simulator img {
+  #main-shop .sim-items .simulatoren .simulator img {
     width: auto;
     height: auto;
   }
-  #main-shop .sim-items .simulator button {
-    text-transform: uppercase;
-    color: #ffffff;
-    border: none;
-    background-color: #FF2D2D;
+  #main-shop .sim-items .simulatoren .simulator button {
     width: 35%;
     padding: 0.5rem;
   }
@@ -11868,10 +11974,9 @@ button {
     height: auto;
     width: 100vw;
     box-sizing: border-box;
-    padding: 20vh 5vw 10vh 5vw;
+    padding: 15vh 5vw 10vh 5vw;
     display: flex;
     flex-direction: column;
-    padding: 10vh 5vw;
   }
   #main-sim-item .accordion-button {
     padding: 0.25rem;
@@ -11885,16 +11990,16 @@ button {
   #main-sim-item .all-item .sim-item {
     display: flex;
     flex-direction: column;
-    width: 40vw;
+    width: 45vw;
   }
   #main-sim-item .all-item .sim-item .slideshow {
     display: flex;
     flex-direction: row;
     position: relative;
-    width: 40vw;
+    width: 45vw;
   }
   #main-sim-item .all-item .sim-item .slideshow .slides {
-    width: 40vw;
+    width: 45vw;
     display: flex;
     justify-content: flex-start;
     align-items: center;

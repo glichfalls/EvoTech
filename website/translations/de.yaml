@@ -26,12 +26,17 @@ pages:
       schweiz: Schweiz
     shop:
       title: simulatoren
-      text-race:
-        Dank unserer einzigartigen Konstruktion lassen sich die TopSpeed-Simulatoren extrem schnell von der Formel 1 in die GT-Sitzposition umstellen. Dadurch erlebst Du Racing noch realistischer. 
-        Neben dem Sitz werden die Pedale und das Lenkrad geometrisch auf einander abgestimmt. 
-      text-pro:
-        Mit der Sitz- und Pedalverstellung kann jeder Fahrer mit einem Handgriff den Simulator auf seine Vorlieben und Körpergrösse einstellen - unabhängig von der F1-GT-Position. 
-        Wir verbauen nur hochwertige Komponenten. Wie z.B. die WheelBase von Fanatec oder Moza und Pedals von Heusinkveld. 
+      allg-text1: 
+        Dank unserer einzigartigen Konstruktion lassen sich die TopSpeed-Simulatoren extrem schnell von der Formel 1 in die GT-Sitzposition umstellen. Dadurch erlebst Du Racing noch realistischer.
+        Neben dem Sitz werden die Pedale und das Lenkrad geometrisch auf einander abgestimmt.
+      allg-text2: 
+        Mit der Sitz- und Pedalverstellung kann jeder Fahrer mit einem Handgriff den Simulator auf seine Vorlieben und Körpergrösse einstellen - unabhängig von der F1-GT-Position.
+        Wir verbauen nur hochwertige Komponenten. Wie z.B. die WheelBase von Fanatec oder Moza und Pedals von Heusinkveld.
+      allg-text3: 
+        TopSpeed-Simulatoren werden mit installiertem Assetto Corsa® ausgeliefert. Durch zahlreiche Mods wird eine Vielzahl von weiteren Rennwagen und Strecken zur Verfügung gestellt. Zudem wird durch graphische Optimierung die realistische Darstellung weiter erhöht.
+      allg-text4: 
+        Aktuell sind die beiden TopSpeed-Typen Race und Pro erhältlich.
+        TopSpeed-Simulatoren werden streng nach EG-Richtlinien gebaut und geprüft. Achte auf das CE-Zeichen, ein Qualitätsmerkmal auf dem Basisträger.
       button: zusammenstellen
       send: Anfrage abschicken
       sim-race:

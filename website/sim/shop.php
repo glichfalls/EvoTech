@@ -24,23 +24,30 @@ include '../bootstrap.php'; global $formData;
   <main id="main-shop">
     <h1><?= $translation->t('pages.sim.shop.title') ?></h1>
     <div class="sim-items">
-      <div class="simulator">
-        <h2>race</h2>
-        <img src="../images/angebot_3.jpg" alt="simulator race version">
-        <p><?= $translation->t('pages.sim.shop.text-race') ?></p>
-        <button onclick="location.href='sim-race.php'" type="button">
-          <?= $translation->t('pages.sim.shop.button') ?>
-        </button>
+      <div class="allg-text">
+        <p><?= $translation->t('pages.sim.shop.allg-text1') ?></p>
+        <p><?= $translation->t('pages.sim.shop.allg-text2') ?></p>
+        <p><?= $translation->t('pages.sim.shop.allg-text3') ?></p>
+        <p><?= $translation->t('pages.sim.shop.allg-text4') ?></p>
       </div>
-      <div class="simulator">
-        <h2>pro</h2>
-        <img src="../images/angebot_3.jpg" alt="simulator pro version">
-        <p><?= $translation->t('pages.sim.shop.text-pro') ?></p>
-        <button onclick="location.href='sim-pro.php'" type="button">
-          <?= $translation->t('pages.sim.shop.button') ?>
-        </button>
+      <div class="simulatoren">
+        
+        <div class="simulator">
+          <h2>race</h2>
+          <img src="../images/angebot_3.jpg" alt="simulator race version">
+          <button onclick="location.href='sim-race.php'" type="button">
+            <?= $translation->t('pages.sim.shop.button') ?>
+          </button>
+        </div>
+        <div class="simulator">
+          <h2>pro</h2>
+          <img src="../images/angebot_3.jpg" alt="simulator pro version">
+          <button onclick="location.href='sim-pro.php'" type="button">
+            <?= $translation->t('pages.sim.shop.button') ?>
+          </button>
+        </div>
       </div>
-      </div>
+    </div>
   </main>
 
 </body>
