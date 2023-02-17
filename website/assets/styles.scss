@@ -229,30 +229,22 @@ button {
 
 /* home */
 #main-home {
-  position: relative;
-  box-sizing: border-box;
+  @include main-div();
   height: 100vh;
-  width: 100vw;
-  @include flex-column();
   justify-content: space-between;
 
   .main-bg {
     position: absolute;
     height: 100vh;
     width: 100vw;
-/*     background-image: url(../images/home_bg.jpeg); */
     background-size: cover;
     opacity: .4;
     z-index: -5;
   }
-
-/*   .home-sim {
-    background-image: url(../images/sim_bg.jpg);
-  } */
   
   .header-text {
     width: 100vw;
-    padding: 5.5rem 1rem 0 1rem;
+    height: auto;
     box-sizing: border-box;
 
     h1 {
@@ -272,8 +264,7 @@ button {
   }
 
   .main-bottom {
-    width: 100vw;
-    padding: 0 1rem;
+    margin-top: 3rem;
     box-sizing: border-box;
     @include flex-column();
     align-items: center;
@@ -446,6 +437,10 @@ button {
         .one {
           grid-row: 4 / 6;
           align-self: end;
+        }
+
+        .one-three {
+          grid-row: 4 / 7;
         }
 
         .two {
@@ -918,7 +913,7 @@ button {
   #desktop-nav {
     display: flex;
     padding: 1.5rem 3rem;
-    gap: 3rem;
+    gap: 2rem;
 
     a {
       font-size: 1.3rem;

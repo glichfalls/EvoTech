@@ -6,13 +6,13 @@
     <img src="../images/logo.png" alt="TopSpeedCenter Logo">
   </nav>
   <nav id="desktop-nav">
-    <a href="topspeedcenter.php">home</a>
-    <a href="kontakt.php"><?= $translation->t('pages.tsc.header.kontakt') ?></a>
-    <a href="angebot.php"><?= $translation->t('pages.tsc.header.angebot') ?></a>
-    <a href="buchen.php"><?= $translation->t('pages.tsc.header.buchen') ?></a>
-    <a href="impressum.php"><?= $translation->t('pages.tsc.header.impressum') ?></a>
+    <a href="events.php">home</a>
+    <a href="kontakt_ev.php"><?= $translation->t('pages.events.header.kontakt') ?></a>
+    <a href="angebot_ev.php"><?= $translation->t('pages.events.header.angebot') ?></a>
+    <a href="catering.php"><?= $translation->t('pages.events.header.catering') ?></a>
+    <a href="impressum.php"><?= $translation->t('pages.events.header.impressum') ?></a>
     <a href="<?= $translation->switchLanguage() ?>"><?= $translation->oppositeLocale() ?></a>
-    <a href="../index.php"><img src="../images/logo.png" alt=""></a>
+    <a href="../index.php"><img src="../images/logo.png" alt="logo"></a>
   </nav>
   <div id="side-menu">
     <div class="side-top">
@@ -25,11 +25,11 @@
       </span>
     </div>
     <div class="side-menu-links">
-      <a href="topspeedcenter.php" class="active">home</a>
-      <a href="kontakt.php"><?= $translation->t('pages.tsc.header.kontakt') ?></a>
-      <a href="angebot.php"><?= $translation->t('pages.tsc.header.angebot') ?></a>
-      <a href="buchen.php"><?= $translation->t('pages.tsc.header.buchen') ?></a>
-      <a href="impressum.php"><?= $translation->t('pages.tsc.header.impressum') ?></a>
+      <a href="events.php" class="active">home</a>
+      <a href="kontakt_ev.php"><?= $translation->t('pages.events.header.kontakt') ?></a>
+      <a href="angebot_ev.php"><?= $translation->t('pages.events.header.angebot') ?></a>
+      <a href="catering.php"><?= $translation->t('pages.events.header.catering') ?></a>
+      <a href="impressum.php"><?= $translation->t('pages.events.header.impressum') ?></a>
     </div>
     <div class="side-lang">
       <a href="<?= $translation->switchLanguage() ?>"><?= $translation->oppositeLocale() ?></a>

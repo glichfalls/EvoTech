@@ -19,6 +19,7 @@ if ($locale === 'de' || $locale === 'en') {
 $formDataRace = [
   'Basis' => [
     'Lizenz  (Asetto Corsa)' => [
+      ['label' => 'Wähle eine Lizenz'],
       ['label' => 'Privat (Aufpreis 29.-)', 'price' => 10637],
       ['label' => 'Commercial Edition (Aufpreis 700.-)', 'price' => 11308],
       ['label' => 'Pro Lizenz (Aufpreis 2\'000.-)', 'price' => 12608]
@@ -140,6 +141,7 @@ $formDataRace = [
 $formDataPro = [
   'Basis' => [
     'Lizenz  (Asetto Corsa)' => [
+      ['label' => 'Wähle eine Lizenz'],
       ['label' => 'Privat (Aufpreis 29.-)', 'price' => 12587],
       ['label' => 'Commercial Edition (Aufpreis 700.-)', 'price' => 13258],
       ['label' => 'Pro Lizenz (Aufpreis 2\'000.-)', 'price' => 14558]

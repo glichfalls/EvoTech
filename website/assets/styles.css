@@ -11109,29 +11109,26 @@ button {
 
 /* home */
 #main-home {
-  position: relative;
-  box-sizing: border-box;
-  height: 100vh;
+  height: auto;
   width: 100vw;
+  box-sizing: border-box;
+  padding: 15vh 5vw 10vh 5vw;
   display: flex;
   flex-direction: column;
+  height: 100vh;
   justify-content: space-between;
-  /*   .home-sim {
-      background-image: url(../images/sim_bg.jpg);
-    } */
 }
 #main-home .main-bg {
   position: absolute;
   height: 100vh;
   width: 100vw;
-  /*     background-image: url(../images/home_bg.jpeg); */
   background-size: cover;
   opacity: 0.4;
   z-index: -5;
 }
 #main-home .header-text {
   width: 100vw;
-  padding: 5.5rem 1rem 0 1rem;
+  height: auto;
   box-sizing: border-box;
 }
 #main-home .header-text h1, #main-home .header-text .h1 {
@@ -11147,8 +11144,7 @@ button {
   margin: 1rem 0 0 0;
 }
 #main-home .main-bottom {
-  width: 100vw;
-  padding: 0 1rem;
+  margin-top: 3rem;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -11315,6 +11311,9 @@ button {
 #main-angebot .tarife .tab-content .tarife-grid .one {
   grid-row: 4/6;
   align-self: end;
+}
+#main-angebot .tarife .tab-content .tarife-grid .one-three {
+  grid-row: 4/7;
 }
 #main-angebot .tarife .tab-content .tarife-grid .two {
   grid-row: 9/11;
@@ -11638,7 +11637,7 @@ button {
   #desktop-nav {
     display: flex;
     padding: 1.5rem 3rem;
-    gap: 3rem;
+    gap: 2rem;
   }
   #desktop-nav a {
     font-size: 1.3rem;

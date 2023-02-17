@@ -41,12 +41,20 @@ pages:
       send: Anfrage abschicken
       sim-race:
         title: Race Simulator
+        desc:
+          Der Typ-Race ist der kleine Bruder vom Pro. In vielen Belangen nicht ganz so kraftvoll, aber ein echter Meister wenn es um gefühlvolles Fahren geht. Die ebenfalls perfekt auf einander abgestimmten Komponenten stehen den gröberen in punkto Präzision in nichts nach.  
       sim-pro: 
         title: Pro Simulator
         desc: 
           Das Pro steht zurecht für professional. Ausreden sind fehl am Platz. 
           Exaktes Lenken mit perfektem Force-Feedback, hartes Bremsen oder gefühlvolles Beschleunigen, sowie ein mit seiner Grösse und Auflösung optimal abgestimmter Monitor.  
           Hier werden nur HighEnd-Komponenten verbaut! 
+      lizenz:
+        one: Die Lizenzen von Assetto Corsa® sind wie folgt aufgegliedert
+        two: Für den privaten Gebrauch 
+        three: Commercial Edition Lizenz - für eine kommerzielle Nutzung (Installation von Mods und visuelle Anpassung sind aber NICHT erlaubt)
+        four: Pro-Lizenz - für eine kommerzielle Nutzung (Installation von Mods und visuelle Anpassung sind erlaubt)
+
     impressum:
       title: impressum
       leitung: Geschäftsleitung
@@ -65,6 +73,8 @@ pages:
       freitag: freitag
       samstag: samstag
       sonntag: sonntag
+      feiertage: feiertage
+      siehe-home: siehe Homepage
       hauptzeiten-mo-fr: hauptzeiten mo - fr
       ab: ab
       wochenende-feiertage: wochenende und feiertage
@@ -76,8 +86,11 @@ pages:
       studenten: Schüler, Lehrlinge und Studenten
       tarife: Tarife und Angebote
       einzelfahrt: Einzelfahrten - Tarife in CHF inkl. MwSt
+      anz-sim: Anzahl Simulatoren
+      6sim: 6 Simulatoren
       hauptzeit: Hauptzeiten
       nebenzeit: Nebenzeiten
+      startgeb: Startgebühr für die ersten 120min
       alle-weiteren: alle weiteren
       gutscheine: Gutscheine/Bonuskarten - Tarife in CHF inkl. MwSt
       lizenzen: Lizenzen - Tarife in CHF inkl. MwSt
@@ -123,3 +136,9 @@ pages:
         Pushen Sie die Rennboliden wie ein Profi 
         durch die Kurven oder geniessen Sie die 
         Atmosphäre in der Longe mit Sicht auf grosse Bildschirme.
+  events:
+    header:
+      kontakt: kontakt
+      angebot: angebot
+      catering: catering
+      impressum: impressum

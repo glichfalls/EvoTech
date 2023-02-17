@@ -27,17 +27,17 @@ include '../bootstrap.php'; global $formData;
         <h1>TopSpeedCenter</h1>
         <h2>Events</h2>
         <p>
-          text
+          <?= $translation->t('pages.events.header.kontakt') ?>
         </p>
       </div>
-      <div class="main-bottom">
+      <!-- <div class="main-bottom">
         <button onclick="location.href='shop.php'" type="button">
           text
         </button>
         <p>
           text
         </p>
-      </div>
+      </div> -->
   </main>
 
 </body>

@@ -88,13 +88,13 @@ if(isset($_POST["submit"])) {
           <img id="thumbnail_4" src="../images/sneaker/img25.jpg" alt="" class="thumbnail">
         </div>
         <div class="sim-text">
-          <p><?= $translation->t('pages.sim.shop.sim-pro.desc') ?></p>
+          <p><?= $translation->t('pages.sim.shop.sim-race.desc') ?></p>
         </div>
       </div>
       <div class="item-all-right">
           <form id="form-container" method="post" onsubmit="return validateSim()">
         <div class="accordion" id="formAccordion">
-          <h2>Zwischentotal : <span id="total">10'608</span> CHF</h2>
+          <h2>Zwischentotal : <span id="total">10608</span> CHF</h2>
           <?php foreach ($formDataRace as $mainCategory => $categories): ?>
             <div class="accordion-item">
               <h2 class="accordion-header my-0" id="headingThree">
