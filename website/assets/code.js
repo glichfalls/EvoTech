@@ -174,20 +174,35 @@ $(document).ready(function() {
 
   if (container) {
 
+    const nf = new Intl.NumberFormat('de-CH', { style: 'currency', currency: 'CHF' });
+
     const prices = {};
 
     const getTotal = () => {
       return Object.values(prices).reduce((previousValue, currentValue) => previousValue + currentValue, 0);
     };
 
-    container.find('select').on('change', function (e) {
+    const calc = () => {
       const option = $(this).find('option:selected');
       const category = $(this).attr('name');
       prices[category] = Number(option.data('price'));
       const newTotal = getTotal();
       console.log(newTotal);
-      $('#total').html(newTotal);
+      $('#total').html(nf.format(newTotal));
+    }
+
+    container.find('select').on('change', function (e) {
+      calc();
     });
+
+    const start = () => {
+      const total = $('#total');
+      const start = Number(total.data('initial'));
+      prices['Basis'] = start;
+      total.html(nf.format(start));
+    }
+
+    start();
 
   }
 

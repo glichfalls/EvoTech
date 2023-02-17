@@ -11,43 +11,26 @@ require '../assets/PHPMailer/SMTP.php';
 require '../assets/PHPMailer/Exception.php';
 
 if(isset($_POST["submit"])) {
-  $mail = new PHPMailer();
-  $mail->isSMTP();
-  $mail->Host = "smtp.gmail.com";
-  $mail->SMTPAuth = true;
-  $mail->Username = "robin.ingold22@gmail.com";
-  $mail->Password = "erxkhoqfkmmitout";
+    $mail = new PHPMailer();
+    $mail->isSMTP();
+    $mail->Host = "smtp.gmail.com";
+    $mail->SMTPAuth = true;
+    $mail->Username = "robin.ingold22@gmail.com";
+    $mail->Password = "erxkhoqfkmmitout";
 
-  $mail->setFrom("robin.ingold22@gmail.com", "sender");
-  $mail->addAddress("robin.ingold@hotmail.com", "robin");
+    $mail->setFrom("robin.ingold22@gmail.com", "sender");
+    $mail->addAddress("robin.ingold@hotmail.com", "robin");
 
-  $mail->Subject = "Webanfrage Simulatoren";
-  $mail->Body =
-  "Vorname: " . $_POST["vorname"] .
-  "\r\n \r\n Nachname: " . $_POST["nachname"] .
-  "\r\n \r\n Strasse: " . $_POST["strasse"] .
-  "\r\n \r\n Ort: " . $_POST["ort"] .
-  "\r\n \r\n Email: " . $_POST["email"] .
-  "\r\n \r\n Tel: \r\n" . $_POST["tel"] .
-  "\r\n \r\n Konfiguration: \r\n" . $_POST["tel"] .
-  "\r\n \r\n Einsatz: " . $_POST["Einsatz"] .
-  "\r\n \r\n Headset: " . $_POST["Headset"] .
-  "\r\n \r\n Lautsprecher: " . $_POST["Lautsprecher"] .
-  "\r\n \r\n 4-Punkt-Gurte: " . $_POST["4-Punkt-Gurte"] .
-  "\r\n \r\n Kabeleingang: " . $_POST["Kabeleingang"] .
-  "\r\n \r\n Simulatorfarbe: " . $_POST["Simulatorfarbe"] .
-  "\r\n \r\n Spezielle Farbangabe: " . $_POST["Spezielle Farbangabe"] .
-  "\r\n \r\n Sitzfarbe: " . $_POST["Sitzfarbe"] .
-  "\r\n \r\n Polsterfarbe: " . $_POST["Polsterfarbe"] .
-  "\r\n \r\n Fadenfarbe: " . $_POST["Fadenfarbe"] .
-  "\r\n \r\n Startnummer: " . $_POST["Startnummer"] .
-  "\r\n \r\n Farbe der Startnummer: " . $_POST["Farbe der Startnummer"] .
-  "\r\n \r\n Nummer-Design: " . $_POST["Nummer-Design"] .
-  "\r\n \r\n Hintergrund Startnummer: " . $_POST["Hintergrund Startnummer"] .
-  "\r\n \r\n Fahrername: " . $_POST["Fahrername"];
+    $mail->Subject = "Webanfrage Simulatoren";
 
-  if($mail->send()) {
-  }
+    $mail->isHTML();
+    ob_start();
+    require 'mail.php';
+    $body = ob_get_clean();
+    ob_end_clean();
+
+    $mail->Body = $body;
+    $mail->send();
 }
 
 ?>
