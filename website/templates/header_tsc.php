@@ -7,9 +7,9 @@
   </nav>
   <nav id="desktop-nav">
     <a href="topspeedcenter.php">home</a>
-    <a href="kontakt.php"><?= $translation->t('pages.tsc.header.kontakt') ?></a>
     <a href="angebot.php"><?= $translation->t('pages.tsc.header.angebot') ?></a>
     <a href="buchen.php"><?= $translation->t('pages.tsc.header.buchen') ?></a>
+    <a href="kontakt.php"><?= $translation->t('pages.tsc.header.kontakt') ?></a>
     <a href="impressum.php"><?= $translation->t('pages.tsc.header.impressum') ?></a>
     <a href="<?= $translation->switchLanguage() ?>"><?= $translation->oppositeLocale() ?></a>
     <a href="../index.php"><img src="../images/logo.png" alt="Logo"></a>
@@ -26,9 +26,9 @@
     </div>
     <div class="side-menu-links">
       <a href="topspeedcenter.php" class="active">home</a>
-      <a href="kontakt.php"><?= $translation->t('pages.tsc.header.kontakt') ?></a>
       <a href="angebot.php"><?= $translation->t('pages.tsc.header.angebot') ?></a>
       <a href="buchen.php"><?= $translation->t('pages.tsc.header.buchen') ?></a>
+      <a href="kontakt.php"><?= $translation->t('pages.tsc.header.kontakt') ?></a>
       <a href="impressum.php"><?= $translation->t('pages.tsc.header.impressum') ?></a>
     </div>
     <div class="side-lang">

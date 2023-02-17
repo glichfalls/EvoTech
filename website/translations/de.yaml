@@ -49,6 +49,12 @@ pages:
           Das Pro steht zurecht für professional. Ausreden sind fehl am Platz. 
           Exaktes Lenken mit perfektem Force-Feedback, hartes Bremsen oder gefühlvolles Beschleunigen, sowie ein mit seiner Grösse und Auflösung optimal abgestimmter Monitor.  
           Hier werden nur HighEnd-Komponenten verbaut! 
+      desc1: 
+        Mach Deinen Simulator einzigartig und stelle unten Deinen ganz persönlichen Simulator zusammen.
+      desc2:
+        Schick die Anfrage ab und wir senden Dir ein Angebot mit Bildern wie Dein Simulator aussehen wird.
+      desc3:
+        Bist Du nicht sicher welcher Typ Dir mehr zusagt, vereinbare einen unverbindlichen Termin für eine Probefahrt in unserem Sim-Center und teste beide Typen.
       lizenz:
         one: Die Lizenzen von Assetto Corsa® sind wie folgt aufgegliedert
         two: Für den privaten Gebrauch 
@@ -90,6 +96,7 @@ pages:
       6sim: 6 Simulatoren
       hauptzeit: Hauptzeiten
       nebenzeit: Nebenzeiten
+      nicht-moeglich: nicht möglich
       startgeb: Startgebühr für die ersten 120min
       alle-weiteren: alle weiteren
       gutscheine: Gutscheine/Bonuskarten - Tarife in CHF inkl. MwSt
@@ -97,6 +104,12 @@ pages:
       halbj-karte: Halbj. Karte
       jahreskarte: Jahreskarte
       inbegriffen: in Family Semi-License inbegriffen
+      tarif-info1: Gerne beraten wir Sie bei der Planung Ihres Events.
+      tarif-info2: Anz. Personen, Eventdauer, Catering, Seminarraum, Einzelfahrten, Rennen mit Siegerehrung uvm.
+      tarif-info3: Bei Events ist eine Verlängerung der Öffnungszeiten bis 01:30 möglich.
+      tarif-info4: Die Mindestdauer für Events ist 120min.
+      tarif-info5: Veredeln Sie Ihren Event mit Simulatoren und virtuellen Rennwagen mit Ihrem Firmenlogo.
+      tarif-info6: Oder mieten Sie unsere Simulatoren für Veranstaltungen bei Ihnen vor Ort.
       zusatzinformationen:
         title: Zusatzinformationen
         p-one: Familien-Ermässigung
@@ -128,9 +141,33 @@ pages:
       schweiz: Schweiz
     topspeedcenter:
       sub-text:
-        Erleben Sie unvergessliches
-        Racefeeling und spüren
-        Sie das Adrenalin!
+        Erlebe unvergessliche race action und spüre das Adrenalin!
+        Reserviere Deine Slots und Simulatoren bequem mit dem 
+      buchungssystem: Buchungssystem
+      sub-text2: telefonisch oder komm einfach vorbei => freie Simulatoren können auch spontan benutzt werden.
+      erwartet: Das erwartet Dich
+      erwartet1: Um bei stark ausgebuchten Zeiten keine Verzögerungen zu haben, bitten wir Dich, ca. 15 min. vor Deinem gewählten Termin hier zu sein, damit wir das Fahrzeug auf Dich vorbereiten können und Du on time ready to race bist.
+      erwartet2: Wähle dein Profil
+      erwartet3: Wähle Rennstrecke, Fahrzeug und Simulator (auf Wunsch beraten wir Dich gerne)
+      erwartet4: Wähle das Rennformat vor Ort => einfaches Training, Rennen gegen virtuelle Gegner oder als Gruppe gegen einander Rennen fahren
+      erwartet5: Die Sitz-/Pedal- und Lenkposition unserer Simulatoren werden nach Deinem gewählten F1-/GT-Fahrzeug umgestellt. Dadurch erlebst Du die race action noch realer
+      erwartet6: Beginner erhalten ein kurzes Briefing in die Grundlagen vom Simulator und wie Du schnelle Rundenzeiten erreichst
+      erwartet7: Atemberaubende race action, Leaderboards, HotLap u.vm.
+      erwartet8: Interner Driver Performance Index - vergleiche Dich mit anderen Fahrern
+      erwartet9: Verfolge die Rennen Deiner Freunde bequem in unserem Gästebereich am grossen Monitor. Snacks und Getränke können an der Theke bezogen werden.
+      mitbringen: Was kannst du mitbringen
+      schuhe: Flache, bequeme Schuhe (fahren in Socken ist auch möglich)
+      kleidung: Bequeme Kleidung (Umkleideraum ist vorhanden)
+      handschuhe: Das Tragen von Handschuhen ist aus hygienischen Gründen Pflicht (ein einfaches Modell wird von uns zur Verfügung gestellt). Gerne könnt Ihr Eure eigenen Rennhandschuhe mitbringen oder bei uns kaufen.
+      profil: Profil
+      schaltung: Schaltung
+      automatisch: auto
+      manuell: manuell
+      ideallinie: Ideallinie anzeigen
+      ja: Ja
+      nein: Nein
+      abs: Assistenten (ABS, ESP etc.)
+      schaden: Schaden-/Reifenverschl.
       button: jetzt buchen
       bottom-text: 
         Pushen Sie die Rennboliden wie ein Profi 
@@ -142,3 +179,35 @@ pages:
       angebot: angebot
       catering: catering
       impressum: impressum
+    catering:
+      title: Catering
+    angebot:
+      h3_1: Miete unser Sim-Center exklusiv für Deinen Event
+      h3_2: Verlängerung der Öffnungszeiten
+      h3_3: Das erwartet Euch
+      h3_4: Konferenz-/Schulungsraum
+      h3_5: Essen und Getränke
+      h3_6: Interessiert? 
+      h3_7: Wir kommen mit unseren Simulatoren zu Dir 
+      t1: Planst Du für Deine Firma, Verein, Familie, Freunde, Polterabend, Geburtstag usw. einen spannenden Abend, so miete das TopSpeed Sim-Center. Ein unvergessliches Erlebnis ist garantiert. 
+      t2: ür geschlossene Gesellschaften kann das Sim-Center bis 01:30 geöffnet bleiben.
+      t3: 6 professionelle Renn-Simulatoren
+      t4: Professionelle Instruktion und Begleitung an den Simulatoren
+      t5: Getränkeausgabe an der Theke (zum Essen werden die Getränke serviert)
+      t6: so gut wie alle bekannten Rennstrecken weltweit
+      t7: Ihr könnt aus über 100 Fahrzeugmodellen auswählen (Ferrari, Porsche, McLaren etc.)
+      t8: Wählt das Format - Einzelfahrten, Rennen gegen virtuelle Gegner, oder Rennen in der Gruppe Mit Freitraining, Qualifikation und Finalrennen
+      t9: Siegerehrung (auf Wunsch)
+      t10: Veredle Deinen Event mit Deinem Logo auf dem Simulator und auf den virtuellen Rennboliden
+      t11: Im Gewerbekomplex gibt es die Möglichkeit auch voll ausgestattete Konferenz-/Schulungsräume zu mieten.
+      t12: Unsere grosszügige Tischanordnung lässt keine Wünsche offen.
+      t13: Für den kulinarischen Gaumenschmaus können wir die unten aufgeführten Catering-Firmen empfehlen. Natürlich kannst Du auch Deinen Caterer beauftragen. Die Buchung/Abrechnung erfolgt direkt durch Dich.
+      t14: Wenn nicht anders vereinbart, liefert TopSpeedCenter die Getränke.
+      t15: Empfohlene Catering-Partner
+      t16: Dann sprich uns an oder schreibe eine E-Mail. Gerne stellen wir ein abgestimmtes Paket zusammen und unterbreiten Dir ein unschlagbares Angebot.
+      t17: Wir freuen uns auf Deine Eventanfrage!
+      t18: Miete unsere Simulatoren für Deine Ausstellung, „Tag der offenen Tür“, Präsentationen oder Events jeglicher Art und hinterlass bei Deinen Gästen einen bleibenden Eindruck.
+      t19: 1 TopSpeed-Instruktor unterstützt über die gesamte Eventdauer die Gäste an den Simulatoren
+      t20: Anzahl Simulatoren nach Absprache
+      t21: Für Events mit Laufkundschaft empfehlen wir eine schnell einprägsame Strecke und ein durch Dich festgelegtes Fahrzeug
+      t22: Veredle Deinen Event mit Deinem Logo auf dem Simulator und auf dem virtuellen Rennboliden

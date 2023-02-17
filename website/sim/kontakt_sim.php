@@ -69,7 +69,7 @@ if(isset($_POST["submit"])) {
       Glutz-Blotzheim-Strasse 3<br>
       4500 Solothurn<br>
       <?= $translation->t('pages.sim.kontakt.schweiz') ?><br><br>
-      +41 78 628 04 02<br>
+      +41 32 310 76 60<br>
       <a href="mailto:info@topspeedcenter.ch">info@topspeedcenter.ch</a></p>
       <div class="contact-icons">
         <a href="https://tinyurl.com/2cpzted3"><i class="fa-brands fa-instagram"></i></a>

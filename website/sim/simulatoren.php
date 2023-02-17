@@ -34,9 +34,6 @@ include '../bootstrap.php'; global $formData;
         <button onclick="location.href='shop.php'" type="button">
           <?= $translation->t('pages.sim.home.button') ?>
         </button>
-        <p>
-          <?= $translation->t('pages.sim.home.bottom-text') ?>
-        </p>
       </div>
   </main>
 

@@ -258,17 +258,34 @@ button {
     }
 
     p {
+      width: 90vw;
       font-size: 1.1rem;
       margin: 1rem 0 0 0;
     }
   }
 
+  .main-allg {
+    margin-top: 2rem;
+
+    .main-profil {
+      display: grid; 
+      grid-template-columns: repeat(5, .25fr); 
+      grid-template-rows: repeat(5, .25fr); 
+      grid-column-gap: 5px;
+      grid-row-gap: 0px;  
+      
+      p {
+        font-size: .8rem;
+      }
+    }
+  }
+
   .main-bottom {
-    margin-top: 3rem;
+    margin: 3rem 0 0 0;
+    padding: 0 0 3rem 0;
     box-sizing: border-box;
     @include flex-column();
     align-items: center;
-    gap: 1.5rem;
 
     button {
       @include main-button();
@@ -342,6 +359,29 @@ button {
   margin: 0;
   }
 
+  .events {
+    @include flex-column();
+    width: 90vw;
+    height: auto;
+    gap: 2rem;
+    
+    .events-item {
+      @include flex-column();
+      justify-content: space-between;
+      align-items: flex-start;
+
+      h3 {
+        font-size: 1.2rem;
+        margin: .5rem 0 .3rem 0;
+      }
+
+      p {
+        font-size: .8rem;
+        margin: 0.2rem;
+      }
+    }
+  }
+
   .times {
     @include flex-column();
     padding-top: 2rem;
@@ -407,7 +447,7 @@ button {
       .tarife-grid { 
         width: 90vw;
         display: grid; 
-        grid-template-columns: 1fr auto auto; 
+        grid-template-columns: auto auto auto; 
         grid-template-rows: repeat(24, auto); 
         grid-column-gap: 5px;
         grid-row-gap: 5px; 
@@ -432,6 +472,78 @@ button {
           font-size: .6rem;
           font-weight: 500;
           grid-column: 1 / 4;
+        }
+
+        .nm {
+          grid-row: 7 / 9;
+          grid-column: 2 / 3;
+          justify-self: center;
+          align-self: center;
+        }
+
+        .one {
+          grid-row: 4 / 6;
+          align-self: end;
+        }
+
+        .one-three {
+          grid-row: 4 / 7;
+        }
+
+        .two {
+          grid-row: 9 / 11;
+          align-self: end;
+        }
+
+        .three {
+          grid-row: 19 / 21;
+          align-self: end;
+        }
+
+        .item-center {
+          justify-self: center;
+        }
+
+        .license {
+          grid-column: 2 / 4;
+        }
+      }
+
+      .events-grid { 
+        width: 90vw;
+        display: grid; 
+        grid-template-columns: auto auto auto; 
+        grid-template-rows: repeat(16, auto); 
+        grid-column-gap: 5px;
+        grid-row-gap: 5px; 
+
+        p {
+          font-size: .4rem;
+        }
+
+        h1, h2, h3, h4, h5, h6, p {
+          align-self: center;
+          margin: 0
+        }
+
+        .table-title {
+          font-size: 1.2rem;
+          font-weight: 1000;
+          justify-self: start;
+          grid-column: 1 / 4;
+        }
+
+        .tarife-mwst {
+          font-size: .6rem;
+          font-weight: 500;
+          grid-column: 1 / 4;
+        }
+
+        .nm {
+          grid-row: 7 / 9;
+          grid-column: 2 / 3;
+          justify-self: center;
+          align-self: center;
         }
 
         .one {
@@ -620,6 +732,10 @@ button {
   }
 }
 
+#main-catering {
+  @include main-div();
+}
+
 @media only screen and (min-width: 374px) and (orientation: portrait) {
 
   #main-angebot {
@@ -629,6 +745,13 @@ button {
       .tab-content {
 
         .tarife-grid {
+
+          p {
+            font-size: .6rem;
+          }
+        }
+
+        .events-grid {
 
           p {
             font-size: .6rem;
@@ -680,6 +803,13 @@ button {
           p {
             font-size: .8rem;
           }
+
+          .events-grid {
+  
+            p {
+              font-size: .8rem;
+            }
+          }
         }
 
         .zusatzinfos-div {
@@ -730,7 +860,6 @@ button {
   #main-home {
 
     .header-text {
-      padding: 10rem 2rem 0 2rem;
 
       h1 {
         font-size: 4rem;
@@ -827,6 +956,18 @@ button {
           .tarife-mwst {
             font-size: 1rem;
           }
+
+          .events-grid {
+            grid-template-columns: .5fr auto auto; 
+  
+            p {
+              font-size: 1rem;
+            }
+  
+            .tarife-mwst {
+              font-size: 1rem;
+            }
+          }
         }
 
         .zusatzinfos-div {
@@ -847,10 +988,29 @@ button {
   #main-impressum {
     padding: 12vh 5vw 0 5vw;
   }
+
+  #main-catering {
+    padding: 12vh 5vw 0 5vw;
+  }
 }
 
 @media only screen and (min-width: 799px) and (orientation: landscape) {
-  
+    
+  .index-menu {
+    height: 100vh;
+    width: 100vw;
+    flex-direction: row;
+
+    a {
+      font-size: 1rem;
+    }
+
+    .menu-page {   
+      height: 100vh;
+      width: calc(100vw/3);
+    }
+  }
+
   #main-contact {
     .contact-info {
       .maps {
@@ -884,6 +1044,34 @@ button {
 
       .item-all-right {
         width: 45vw
+      }
+    }
+  }
+
+  #main-angebot {
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    .times {
+      flex-direction: row;
+      gap: 3rem;
+    }
+
+    .events {
+      flex-direction: row;
+      align-items: flex-start;
+
+      .events-item {
+
+        h3 {
+          margin: .7rem 0 .5rem 0;
+        }
+
+        p {
+          font-size: 1rem;
+        }
       }
     }
   }
@@ -921,12 +1109,11 @@ button {
   }
 
   #main-home {
-    overflow: hidden;
+    padding: 15vh 0 5vh 5vw;
 
     .header-text {
-      position: relative;
       top: 10vh;
-      left: 10vw;
+      left: 3vw;
 
       h1 {
         font-size: 5rem;
@@ -937,25 +1124,23 @@ button {
       }
 
       p {
-        font-size: 2rem;
+        width: 60vw;
+        font-size: 1.5rem;
       }
     }
 
-    .main-bottom {
-      box-sizing: border-box;
-      position: absolute;
-      bottom: 5vh;
-      left: 10vw;
-      @include flex-row();
-      flex-direction: row-reverse;
-      justify-content: flex-end;
-      align-items: center;
+    .main-allg {
+      width: 80%;
+      height: auto;
+    }
 
-      p {
-        width: 45vw;
-        font-size: 1.2rem;
-        margin: 0;
-      }
+    .main-bottom {
+      height: auto;
+      width: auto;
+      box-sizing: border-box;
+      margin: 1rem 0 0 0;
+      @include flex-row();
+      align-items: center;
 
       button {
         font-size: 1.2rem;
@@ -988,7 +1173,7 @@ button {
       align-items: flex-start;
 
       h1 {
-        font-size: 4rem;
+        font-size: 3rem;
         margin: 0;
       }
     
@@ -1025,7 +1210,7 @@ button {
     align-items: flex-start;
  
     h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     margin: 0;
     }
 
@@ -1144,6 +1329,60 @@ button {
           }
         }
 
+        .events-grid { 
+          width: 60vw;
+          display: grid; 
+          grid-template-columns: repeat(3, .75fr); 
+          grid-template-rows: repeat(16, .5fr); 
+          grid-column-gap: 20px;
+          grid-row-gap: 0px; 
+
+          h1, h2, h3, h4, h5, h6, p {
+            align-self: center;
+            margin: 0
+          }
+
+          .table-title {
+            font-size: 2rem;
+            font-weight: 1000;
+            justify-self: start;
+            grid-column: 1 / 4;
+          }
+
+          .tarife-mwst {
+            font-size: 1.1rem;
+            font-weight: 500;
+            grid-column: 1 / 4;
+          }
+
+          .one {
+            grid-row: 4 / 6;
+            align-self: end;
+          }
+
+          .two {
+            grid-row: 9 / 11;
+            align-self: end;
+          }
+
+          .three {
+            grid-row: 19 / 21;
+            align-self: end;
+          }
+
+          .item-center {
+            justify-self: center;
+          }
+
+          .license {
+            grid-column: 2 / 4;
+          }
+
+          p {
+            font-size: 1.2rem;
+          }
+        }
+        
         .zusatzinformationen { 
           width: 50vw;
           display: grid; 
@@ -1210,7 +1449,6 @@ button {
     overflow: hidden;
 
     .header-text {
-      top: 35vh;
 
       h1 {
         font-size: 6rem;

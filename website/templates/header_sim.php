@@ -7,8 +7,8 @@
   </nav>
   <nav id="desktop-nav">
     <a href="simulatoren.php">home</a>
-    <a href="kontakt_sim.php"><?= $translation->t('pages.sim.header.kontakt') ?></a>
     <a href="shop.php"><?= $translation->t('pages.sim.header.simulatoren') ?></a>
+    <a href="kontakt_sim.php"><?= $translation->t('pages.sim.header.kontakt') ?></a>
     <a href="impressum_sim.php"><?= $translation->t('pages.sim.header.impressum') ?></a>
     <a href="<?= $translation->switchLanguage() ?>"><?= $translation->oppositeLocale() ?></a>
     <a href="../index.php"><img src="../images/logo.png" alt="Logo"></a>
@@ -25,9 +25,9 @@
     </div>
     <div class="side-menu-links">
       <a href="simulatoren.php">home</a>
-      <a href="kontakt_sim.php"><?= $translation->t('pages.sim.header.kontakt') ?></a>
       <a href="shop.php"><?= $translation->t('pages.sim.header.simulatoren') ?></a>
-      <a href="impressum.php"><?= $translation->t('pages.sim.header.impressum') ?></a>
+      <a href="kontakt_sim.php"><?= $translation->t('pages.sim.header.kontakt') ?></a>
+      <a href="impressum_sim.php"><?= $translation->t('pages.sim.header.impressum') ?></a>
     </div>
     <div class="side-lang">
       <a href="<?= $translation->switchLanguage() ?>"><?= $translation->oppositeLocale() ?></a>

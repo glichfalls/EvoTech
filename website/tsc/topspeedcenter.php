@@ -28,16 +28,56 @@ include '../bootstrap.php'; global $formData;
         <h2>sim racing</h2>
         <h2>solothurn</h2>
         <p>
-          <?= $translation->t('pages.tsc.topspeedcenter.sub-text') ?>
+          <?= $translation->t('pages.tsc.topspeedcenter.sub-text') ?> <a href="buchen.php" style="color: red;"><?= $translation->t('pages.tsc.topspeedcenter.buchungssystem') ?></a>, <?= $translation->t('pages.tsc.topspeedcenter.sub-text') ?>
         </p>
+      </div>
+      <div class="main-allg">
+        <h2><?= $translation->t('pages.tsc.topspeedcenter.erwartet') ?>:</h2>
+        <p>- <?= $translation->t('pages.tsc.topspeedcenter.erwartet1') ?></p>
+        <p>- <?= $translation->t('pages.tsc.topspeedcenter.erwartet2') ?>:</p>
+        <div class="main-profil">
+          <p><?= $translation->t('pages.tsc.topspeedcenter.profil') ?></p>
+          <p>Beginner</p>
+          <p>Racer</p>
+          <p>Expert</p>
+          <p>Profi</p>
+          <p><?= $translation->t('pages.tsc.topspeedcenter.schaltung') ?></p>
+          <p><?= $translation->t('pages.tsc.topspeedcenter.automatisch') ?></p>
+          <p><?= $translation->t('pages.tsc.topspeedcenter.automatisch') ?></p>
+          <p><?= $translation->t('pages.tsc.topspeedcenter.manuell') ?></p>
+          <p><?= $translation->t('pages.tsc.topspeedcenter.manuell') ?></p>
+          <p><?= $translation->t('pages.tsc.topspeedcenter.ideallinie') ?></p>
+          <p><?= $translation->t('pages.tsc.topspeedcenter.ja') ?></p>
+          <p><?= $translation->t('pages.tsc.topspeedcenter.nein') ?></p>
+          <p><?= $translation->t('pages.tsc.topspeedcenter.nein') ?></p>
+          <p><?= $translation->t('pages.tsc.topspeedcenter.nein') ?></p>
+          <p><?= $translation->t('pages.tsc.topspeedcenter.abs') ?></p>
+          <p>100%</p>
+          <p>50%</p>
+          <p>50%</p>
+          <p>0%</p>
+          <p><?= $translation->t('pages.tsc.topspeedcenter.schaden') ?></p>
+          <p>0%</p>
+          <p>0%</p>
+          <p>50%</p>
+          <p>100%</p>
+        </div>
+        <p>- <?= $translation->t('pages.tsc.topspeedcenter.erwartet3') ?></p>
+        <p>- <?= $translation->t('pages.tsc.topspeedcenter.erwartet4') ?></p>
+        <p>- <?= $translation->t('pages.tsc.topspeedcenter.erwartet5') ?></p>
+        <p>- <?= $translation->t('pages.tsc.topspeedcenter.erwartet6') ?></p>
+        <p>- <?= $translation->t('pages.tsc.topspeedcenter.erwartet7') ?></p>
+        <p>- <?= $translation->t('pages.tsc.topspeedcenter.erwartet8') ?></p>
+        <p><?= $translation->t('pages.tsc.topspeedcenter.erwartet9') ?></p>
+        <h2><?= $translation->t('pages.tsc.topspeedcenter.mitbringen') ?>:</h2>
+        <p>- <?= $translation->t('pages.tsc.topspeedcenter.schuhe') ?>:</p>
+        <p>- <?= $translation->t('pages.tsc.topspeedcenter.kleidung') ?>:</p>
+        <p>- <?= $translation->t('pages.tsc.topspeedcenter.handschuhe') ?>:</p>
       </div>
       <div class="main-bottom">
         <button onclick="location.href='buchen.php'" type="button">
           <?= $translation->t('pages.tsc.topspeedcenter.button') ?>
         </button>
-        <p>
-          <?= $translation->t('pages.tsc.topspeedcenter.bottom-text') ?>
-        </p>
       </div>
   </main>
 

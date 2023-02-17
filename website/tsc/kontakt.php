@@ -13,13 +13,13 @@ require '../assets/PHPMailer/Exception.php';
 if(isset($_POST["submit"])) {
   $mail = new PHPMailer();
   $mail->isSMTP();
-  $mail->Host = "smtp.gmail.com";
+  $mail->Host = "asmtp.mail.hostpoint.ch";
   $mail->SMTPAuth = true;
-  $mail->Username = "robin.ingold22@gmail.com";
-  $mail->Password = "erxkhoqfkmmitout";
+  $mail->Username = "info@topspeedcenter.ch";
+  $mail->Password = 'test_$_888test';
 
-  $mail->setFrom("robin.ingold22@gmail.com", "sender");
-  $mail->addAddress("robin.ingold@hotmail.com", "robin");
+  $mail->setFrom("robin.ingold22@gmail.com", "Webformular");
+  $mail->addAddress("info@topspeedcenter.ch", "SimCenter");
 
   $mail->Subject = "Webanfrage Sim-Center";
   $mail->Body = 
@@ -68,7 +68,7 @@ if(isset($_POST["submit"])) {
       Glutz-Blotzheim-Strasse 3<br>
       4500 Solothurn<br>
       <?= $translation->t('pages.tsc.kontakt.schweiz') ?><br><br>
-      +41 78 628 04 02<br>
+      +41 32 310 76 60<br>
       <a href="mailto:info@topspeedcenter.ch">info@topspeedcenter.ch</a></p>
       <div class="contact-icons">
         <a href="https://tinyurl.com/2cpzted3"><i class="fa-brands fa-instagram"></i></a>

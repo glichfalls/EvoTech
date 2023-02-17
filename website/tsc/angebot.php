@@ -33,10 +33,10 @@ include '../bootstrap.php'; global $formData;
           <p>22:00</p>
           <p><?= $translation->t('pages.tsc.angebot.freitag') ?></p>
           <p>07:00</p>
-          <p>23:00</p>
+          <p>23:30</p>
           <p><?= $translation->t('pages.tsc.angebot.samstag') ?></p>
           <p>10:00</p>
-          <p>23:00</p>
+          <p>23:30</p>
           <p><?= $translation->t('pages.tsc.angebot.sonntag') ?></p>
           <p>10:00</p>
           <p>19:00</p>

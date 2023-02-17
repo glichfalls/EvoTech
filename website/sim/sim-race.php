@@ -89,6 +89,16 @@ if(isset($_POST["submit"])) {
         </div>
         <div class="sim-text">
           <p><?= $translation->t('pages.sim.shop.sim-race.desc') ?></p>
+          <p><?= $translation->t('pages.sim.shop.lizenz.one') ?>:</p>
+          <p>- <?= $translation->t('pages.sim.shop.lizenz.two') ?></p>
+          <p>- <?= $translation->t('pages.sim.shop.lizenz.three') ?></p>
+          <p>- <?= $translation->t('pages.sim.shop.lizenz.four') ?></p><br>
+          <p>- <?= $translation->t('pages.sim.shop.desc1') ?></p>
+          <p>- <?= $translation->t('pages.sim.shop.desc2') ?></p><br>
+          <p>- <?= $translation->t('pages.sim.shop.desc3') ?></p>
+          <img src="" alt="" class="nummer">
+          <img src="" alt="" class="farben">
+          <img src="" alt="" class="sitz">
         </div>
       </div>
       <div class="item-all-right">

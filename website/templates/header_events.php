@@ -3,13 +3,13 @@
     <span class="toggle" onclick="sideMenuOpen()">
       <a href="#"><i class="fa-sharp fa-solid fa-bars"></i></a>
     </span>
-    <img src="../images/logo.png" alt="TopSpeedCenter Logo">
+    <a href="../index.php"><img src="../images/logo.png" alt="logo"></a>
   </nav>
   <nav id="desktop-nav">
     <a href="events.php">home</a>
-    <a href="kontakt_ev.php"><?= $translation->t('pages.events.header.kontakt') ?></a>
     <a href="angebot_ev.php"><?= $translation->t('pages.events.header.angebot') ?></a>
     <a href="catering.php"><?= $translation->t('pages.events.header.catering') ?></a>
+    <a href="kontakt_ev.php"><?= $translation->t('pages.events.header.kontakt') ?></a>
     <a href="impressum.php"><?= $translation->t('pages.events.header.impressum') ?></a>
     <a href="<?= $translation->switchLanguage() ?>"><?= $translation->oppositeLocale() ?></a>
     <a href="../index.php"><img src="../images/logo.png" alt="logo"></a>
@@ -26,9 +26,9 @@
     </div>
     <div class="side-menu-links">
       <a href="events.php" class="active">home</a>
-      <a href="kontakt_ev.php"><?= $translation->t('pages.events.header.kontakt') ?></a>
       <a href="angebot_ev.php"><?= $translation->t('pages.events.header.angebot') ?></a>
       <a href="catering.php"><?= $translation->t('pages.events.header.catering') ?></a>
+      <a href="kontakt_ev.php"><?= $translation->t('pages.events.header.kontakt') ?></a>
       <a href="impressum.php"><?= $translation->t('pages.events.header.impressum') ?></a>
     </div>
     <div class="side-lang">

@@ -11140,16 +11140,30 @@ button {
   text-transform: uppercase;
 }
 #main-home .header-text p {
+  width: 90vw;
   font-size: 1.1rem;
   margin: 1rem 0 0 0;
 }
+#main-home .main-allg {
+  margin-top: 2rem;
+}
+#main-home .main-allg .main-profil {
+  display: grid;
+  grid-template-columns: repeat(5, 0.25fr);
+  grid-template-rows: repeat(5, 0.25fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 0px;
+}
+#main-home .main-allg .main-profil p {
+  font-size: 0.8rem;
+}
 #main-home .main-bottom {
-  margin-top: 3rem;
+  margin: 3rem 0 0 0;
+  padding: 0 0 3rem 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
 }
 #main-home .main-bottom button {
   text-transform: uppercase;
@@ -11230,6 +11244,27 @@ button {
   font-size: 2rem;
   margin: 0;
 }
+#main-angebot .events {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  height: auto;
+  gap: 2rem;
+}
+#main-angebot .events .events-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#main-angebot .events .events-item h3, #main-angebot .events .events-item .h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0 0.3rem 0;
+}
+#main-angebot .events .events-item p {
+  font-size: 0.8rem;
+  margin: 0.2rem;
+}
 #main-angebot .times {
   display: flex;
   flex-direction: column;
@@ -11285,7 +11320,7 @@ button {
 #main-angebot .tarife .tab-content .tarife-grid {
   width: 90vw;
   display: grid;
-  grid-template-columns: 1fr auto auto;
+  grid-template-columns: auto auto auto;
   grid-template-rows: repeat(24, auto);
   grid-column-gap: 5px;
   grid-row-gap: 5px;
@@ -11308,6 +11343,12 @@ button {
   font-weight: 500;
   grid-column: 1/4;
 }
+#main-angebot .tarife .tab-content .tarife-grid .nm {
+  grid-row: 7/9;
+  grid-column: 2/3;
+  justify-self: center;
+  align-self: center;
+}
 #main-angebot .tarife .tab-content .tarife-grid .one {
   grid-row: 4/6;
   align-self: end;
@@ -11327,6 +11368,59 @@ button {
   justify-self: center;
 }
 #main-angebot .tarife .tab-content .tarife-grid .license {
+  grid-column: 2/4;
+}
+#main-angebot .tarife .tab-content .events-grid {
+  width: 90vw;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: repeat(16, auto);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+#main-angebot .tarife .tab-content .events-grid p {
+  font-size: 0.4rem;
+}
+#main-angebot .tarife .tab-content .events-grid h1, #main-angebot .tarife .tab-content .events-grid .h1, #main-angebot .tarife .tab-content .events-grid h2, #main-angebot .tarife .tab-content .events-grid .h2, #main-angebot .tarife .tab-content .events-grid h3, #main-angebot .tarife .tab-content .events-grid .h3, #main-angebot .tarife .tab-content .events-grid h4, #main-angebot .tarife .tab-content .events-grid .h4, #main-angebot .tarife .tab-content .events-grid h5, #main-angebot .tarife .tab-content .events-grid .h5, #main-angebot .tarife .tab-content .events-grid h6, #main-angebot .tarife .tab-content .events-grid .h6, #main-angebot .tarife .tab-content .events-grid p {
+  align-self: center;
+  margin: 0;
+}
+#main-angebot .tarife .tab-content .events-grid .table-title {
+  font-size: 1.2rem;
+  font-weight: 1000;
+  justify-self: start;
+  grid-column: 1/4;
+}
+#main-angebot .tarife .tab-content .events-grid .tarife-mwst {
+  font-size: 0.6rem;
+  font-weight: 500;
+  grid-column: 1/4;
+}
+#main-angebot .tarife .tab-content .events-grid .nm {
+  grid-row: 7/9;
+  grid-column: 2/3;
+  justify-self: center;
+  align-self: center;
+}
+#main-angebot .tarife .tab-content .events-grid .one {
+  grid-row: 4/6;
+  align-self: end;
+}
+#main-angebot .tarife .tab-content .events-grid .one-three {
+  grid-row: 4/7;
+}
+#main-angebot .tarife .tab-content .events-grid .two {
+  grid-row: 9/11;
+  align-self: end;
+}
+#main-angebot .tarife .tab-content .events-grid .three {
+  grid-row: 19/21;
+  align-self: end;
+}
+#main-angebot .tarife .tab-content .events-grid .item-center {
+  justify-self: center;
+}
+#main-angebot .tarife .tab-content .events-grid .license {
   grid-column: 2/4;
 }
 #main-angebot .tarife .tab-content .zusatzinfos-div {
@@ -11485,8 +11579,20 @@ button {
   margin: 0;
 }
 
+#main-catering {
+  height: auto;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 15vh 5vw 10vh 5vw;
+  display: flex;
+  flex-direction: column;
+}
+
 @media only screen and (min-width: 374px) and (orientation: portrait) {
   #main-angebot .tarife .tab-content .tarife-grid p {
+    font-size: 0.6rem;
+  }
+  #main-angebot .tarife .tab-content .events-grid p {
     font-size: 0.6rem;
   }
   #main-angebot .tarife .tab-content .zusatzinfos-div .zusatzinformationen p {
@@ -11504,6 +11610,9 @@ button {
     font-size: 0.8rem;
   }
   #main-angebot .tarife .tab-content .tarife-grid p {
+    font-size: 0.8rem;
+  }
+  #main-angebot .tarife .tab-content .tarife-grid .events-grid p {
     font-size: 0.8rem;
   }
   #main-angebot .tarife .tab-content .zusatzinfos-div .zusatzinformationen p {
@@ -11527,9 +11636,6 @@ button {
   }
   #side-menu .side-lang a {
     font-size: 1.5rem;
-  }
-  #main-home .header-text {
-    padding: 10rem 2rem 0 2rem;
   }
   #main-home .header-text h1, #main-home .header-text .h1 {
     font-size: 4rem;
@@ -11584,6 +11690,15 @@ button {
   #main-angebot .tarife .tab-content .tarife-grid .tarife-mwst {
     font-size: 1rem;
   }
+  #main-angebot .tarife .tab-content .tarife-grid .events-grid {
+    grid-template-columns: 0.5fr auto auto;
+  }
+  #main-angebot .tarife .tab-content .tarife-grid .events-grid p {
+    font-size: 1rem;
+  }
+  #main-angebot .tarife .tab-content .tarife-grid .events-grid .tarife-mwst {
+    font-size: 1rem;
+  }
   #main-angebot .tarife .tab-content .zusatzinfos-div .zusatzinformationen {
     grid-template-columns: 0.5fr auto;
   }
@@ -11593,8 +11708,23 @@ button {
   #main-impressum {
     padding: 12vh 5vw 0 5vw;
   }
+  #main-catering {
+    padding: 12vh 5vw 0 5vw;
+  }
 }
 @media only screen and (min-width: 799px) and (orientation: landscape) {
+  .index-menu {
+    height: 100vh;
+    width: 100vw;
+    flex-direction: row;
+  }
+  .index-menu a {
+    font-size: 1rem;
+  }
+  .index-menu .menu-page {
+    height: 100vh;
+    width: 33.3333333333vw;
+  }
   #main-contact .contact-info .maps {
     display: block;
   }
@@ -11615,6 +11745,23 @@ button {
   }
   #main-sim-item .all-item .item-all-right {
     width: 45vw;
+  }
+  #main-angebot h1, #main-angebot .h1 {
+    font-size: 3rem;
+  }
+  #main-angebot .times {
+    flex-direction: row;
+    gap: 3rem;
+  }
+  #main-angebot .events {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  #main-angebot .events .events-item h3, #main-angebot .events .events-item .h3 {
+    margin: 0.7rem 0 0.5rem 0;
+  }
+  #main-angebot .events .events-item p {
+    font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1365px) and (orientation: landscape) {
@@ -11643,12 +11790,11 @@ button {
     font-size: 1.3rem;
   }
   #main-home {
-    overflow: hidden;
+    padding: 15vh 0 5vh 5vw;
   }
   #main-home .header-text {
-    position: relative;
     top: 10vh;
-    left: 10vw;
+    left: 3vw;
   }
   #main-home .header-text h1, #main-home .header-text .h1 {
     font-size: 5rem;
@@ -11657,23 +11803,21 @@ button {
     font-size: 3rem;
   }
   #main-home .header-text p {
-    font-size: 2rem;
+    width: 60vw;
+    font-size: 1.5rem;
+  }
+  #main-home .main-allg {
+    width: 80%;
+    height: auto;
   }
   #main-home .main-bottom {
+    height: auto;
+    width: auto;
     box-sizing: border-box;
-    position: absolute;
-    bottom: 5vh;
-    left: 10vw;
+    margin: 1rem 0 0 0;
     display: flex;
     flex-direction: row;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
     align-items: center;
-  }
-  #main-home .main-bottom p {
-    width: 45vw;
-    font-size: 1.2rem;
-    margin: 0;
   }
   #main-home .main-bottom button {
     font-size: 1.2rem;
@@ -11705,7 +11849,7 @@ button {
     align-items: flex-start;
   }
   #main-contact .contact-form h1, #main-contact .contact-form .h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 0;
   }
   #main-contact .contact-form form {
@@ -11740,7 +11884,7 @@ button {
     align-items: flex-start;
   }
   #main-angebot h1, #main-angebot .h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     margin: 0;
   }
   #main-angebot .times {
@@ -11837,6 +11981,50 @@ button {
   #main-angebot .tarife .tab-content .tarife-grid p {
     font-size: 1.2rem;
   }
+  #main-angebot .tarife .tab-content .events-grid {
+    width: 60vw;
+    display: grid;
+    grid-template-columns: repeat(3, 0.75fr);
+    grid-template-rows: repeat(16, 0.5fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+  }
+  #main-angebot .tarife .tab-content .events-grid h1, #main-angebot .tarife .tab-content .events-grid .h1, #main-angebot .tarife .tab-content .events-grid h2, #main-angebot .tarife .tab-content .events-grid .h2, #main-angebot .tarife .tab-content .events-grid h3, #main-angebot .tarife .tab-content .events-grid .h3, #main-angebot .tarife .tab-content .events-grid h4, #main-angebot .tarife .tab-content .events-grid .h4, #main-angebot .tarife .tab-content .events-grid h5, #main-angebot .tarife .tab-content .events-grid .h5, #main-angebot .tarife .tab-content .events-grid h6, #main-angebot .tarife .tab-content .events-grid .h6, #main-angebot .tarife .tab-content .events-grid p {
+    align-self: center;
+    margin: 0;
+  }
+  #main-angebot .tarife .tab-content .events-grid .table-title {
+    font-size: 2rem;
+    font-weight: 1000;
+    justify-self: start;
+    grid-column: 1/4;
+  }
+  #main-angebot .tarife .tab-content .events-grid .tarife-mwst {
+    font-size: 1.1rem;
+    font-weight: 500;
+    grid-column: 1/4;
+  }
+  #main-angebot .tarife .tab-content .events-grid .one {
+    grid-row: 4/6;
+    align-self: end;
+  }
+  #main-angebot .tarife .tab-content .events-grid .two {
+    grid-row: 9/11;
+    align-self: end;
+  }
+  #main-angebot .tarife .tab-content .events-grid .three {
+    grid-row: 19/21;
+    align-self: end;
+  }
+  #main-angebot .tarife .tab-content .events-grid .item-center {
+    justify-self: center;
+  }
+  #main-angebot .tarife .tab-content .events-grid .license {
+    grid-column: 2/4;
+  }
+  #main-angebot .tarife .tab-content .events-grid p {
+    font-size: 1.2rem;
+  }
   #main-angebot .tarife .tab-content .zusatzinformationen {
     width: 50vw;
     display: grid;
@@ -11881,9 +12069,6 @@ button {
   }
   #main-home {
     overflow: hidden;
-  }
-  #main-home .header-text {
-    top: 35vh;
   }
   #main-home .header-text h1, #main-home .header-text .h1 {
     font-size: 6rem;

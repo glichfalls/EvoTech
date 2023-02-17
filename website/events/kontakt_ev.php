@@ -68,14 +68,14 @@ if(isset($_POST["submit"])) {
       Glutz-Blotzheim-Strasse 3<br>
       4500 Solothurn<br>
       <?= $translation->t('pages.tsc.kontakt.schweiz') ?><br><br>
-      +41 78 628 04 02<br>
+      +41 32 310 76 60<br>
       <a href="mailto:info@topspeedcenter.ch">info@topspeedcenter.ch</a></p>
       <div class="contact-icons">
         <a href="https://tinyurl.com/2cpzted3"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://tinyurl.com/3xznjs3k"><i class="fa-brands fa-square-facebook"></i></a>
       </div>
       <div class="maps">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2710.687223223171!2d7.5273279201100145!3d47.20313416934962!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791d800a3a1fc97%3A0xe8eae74959be4f27!2sGlutz-Blotzheim-Strasse%203%2C%204500%20Solothurn!5e0!3m2!1sen!2sch!4v1673297725943!5m2!1sen!2sch" width="600px" height="450px; style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1355.3665121167492!2d7.527234658215989!3d47.202237794790015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791d9a6ea82ec4b%3A0x146fe5d56cefb7d0!2sTopSpeedCenter%20GmbH!5e0!3m2!1sen!2sch!4v1676649368205!5m2!1sen!2sch" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>">
       </div>
     </div>
   </main>
